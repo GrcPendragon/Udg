@@ -20,7 +20,7 @@ Public Partial Class MainForm
 	Dim resultado As String = "El resultado de las sumatorias es: "+vbLf
 	
 	Sub BtnCalcularClick(sender As Object, e As EventArgs)
-		
+		resultado = "El resultado de las sumatorias es: "+vbLf
 		lmInf = Convert.ToInt32(txtInf.Text)
 		lmSup = Convert.ToInt32(txtSup.Text)
 		If lmInf <= lmSup Then
@@ -34,16 +34,19 @@ Public Partial Class MainForm
 			MsgBox("El limite superior debe ser mayor al limite inferior")
 		End If
 		
-		
-		
-		
 	End Sub
+	
+	'Metodo del CicloFor
 	
 	Sub cicloFor()
 		sumatoria = 0
 		For cont As Int32 = lmInf to lmSup 
+			If cont = 0 Then
+				Continue For
+			Else
+				sumatoria = sumatoria + (1/cont)
+			End If
 			
-			sumatoria = sumatoria + (1/cont)
 			
 		Next
 		
@@ -51,19 +54,28 @@ Public Partial Class MainForm
 		
 	End Sub
 	
+	'Metodo del CicloDoWhile
+	
 	Sub cicloDoWhileIni()
 		Dim cont As Int32 = lmInf
 		sumatoria = 0
 		
 		Do While cont <= lmSup
 			
-			sumatoria = sumatoria + (1/cont)
-			cont +=1
+			If cont = 0 Then
+				cont +=1
+				Continue Do
+			Else
+				sumatoria = sumatoria + (1/cont)
+				cont +=1
+			End If
 			
 		Loop
 		
 		resultado = resultado + "Do while: "+sumatoria.ToString("0.000")+vbLf
 	End Sub
+	
+	'Metodo del CicloDoUntil
 	
 	Sub cicloDoUntilIni()
 		Dim cont As Int32 = lmInf
@@ -71,8 +83,13 @@ Public Partial Class MainForm
 		
 		Do Until cont = lmSup+1
 			
-			sumatoria = sumatoria + (1/cont)
-			cont +=1
+			If cont = 0 Then
+				cont +=1
+				Continue Do
+			Else
+				sumatoria = sumatoria + (1/cont)
+				cont +=1
+			End If
 			
 		Loop
 		
@@ -80,13 +97,20 @@ Public Partial Class MainForm
 		
 	End Sub
 	
+	'Metodo del CicloDo-While
+	
 	Sub cicloDoWhileFin()
 		Dim cont As Int32 = lmInf
 		sumatoria = 0
 		
 		Do 
-			sumatoria = sumatoria + (1/cont)
-			cont+=1
+			If cont = 0 Then
+				cont +=1
+				Continue Do
+			Else
+				sumatoria = sumatoria + (1/cont)
+				cont +=1
+			End If
 			
 		Loop While cont <= lmSup
 		
@@ -94,18 +118,73 @@ Public Partial Class MainForm
 		
 	End Sub
 	
+	'Metodo del CicloDo-Until
+	
 	Sub cicloDoUntilFin()
 		Dim cont As Int32 = lmInf
 		sumatoria = 0
 		
 		Do 
 			
-			sumatoria = sumatoria + (1/cont)
-			cont+=1
+			If cont = 0 Then
+				cont +=1
+				Continue Do
+			Else
+				sumatoria = sumatoria + (1/cont)
+				cont +=1
+			End If
 			
 		Loop Until cont = lmSup + 1
 		
 		resultado = resultado + "Do - Until: "+sumatoria.ToString("0.000")+vbLf
 		
 	End Sub
+	
+	Sub TxtSupTextChanged(sender As Object, e As EventArgs)
+		If Not IsNumero(txtSup.Text) Then
+			If txtSup.Text.Length <= 1 Then
+				txtSup.Text = "0"
+				MsgBox("Solo numeros")
+			Else
+				txtSup.Text = txtSup.Text.Remove(txtSup.Text.Length-1)
+				MsgBox("Solo numeros")
+			End If
+		End If
+	End Sub
+	
+	Sub TxtInfTextChanged(sender As Object, e As EventArgs)
+		If Not IsNumero(txtInf.Text) Then
+			If txtInf.Text.Length <= 1 Then
+				txtInf.Text = "0"
+				MsgBox("Solo numeros")
+			Else
+				txtInf.Text = txtInf.Text.Remove(txtInf.Text.Length-1)
+				MsgBox("Solo numeros")
+			End If
+		End If
+	End Sub
+	
+	'Funciones
+	
+	Public Function IsNumero(cadena As String) As Boolean
+		Dim bandera As Boolean = False
+		Dim valorAscii As Integer
+		
+		For x As Integer = 0 To cadena.Length-1
+			valorAscii = Asc(cadena.Chars(x))
+			
+			Select valorAscii
+				Case 48 To 57
+					bandera = True	
+				Case 45,46
+					bandera = True
+				Case Else
+					bandera = false
+			End Select
+		Next
+		Return bandera
+	End Function
+	
+	
+	
 End Class

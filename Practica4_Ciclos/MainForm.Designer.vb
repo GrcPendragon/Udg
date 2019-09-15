@@ -70,6 +70,8 @@ Partial Class MainForm
 		Me.txtSup.Name = "txtSup"
 		Me.txtSup.Size = New System.Drawing.Size(181, 20)
 		Me.txtSup.TabIndex = 2
+		Me.txtSup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		AddHandler Me.txtSup.TextChanged, AddressOf Me.TxtSupTextChanged
 		'
 		'txtInf
 		'
@@ -77,6 +79,8 @@ Partial Class MainForm
 		Me.txtInf.Name = "txtInf"
 		Me.txtInf.Size = New System.Drawing.Size(181, 20)
 		Me.txtInf.TabIndex = 4
+		Me.txtInf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		AddHandler Me.txtInf.TextChanged, AddressOf Me.TxtInfTextChanged
 		'
 		'label2
 		'

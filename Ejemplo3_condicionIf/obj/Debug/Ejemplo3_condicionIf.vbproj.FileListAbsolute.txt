@@ -12,3 +12,10 @@ F:\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf
 F:\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.vbproj.GenerateResource.Cache
 F:\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.exe
 F:\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\bin\Debug\Ejemplo3_condicionIf.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\bin\Debug\Ejemplo3_condicionIf.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo3_condicionIf\obj\Debug\Ejemplo3_condicionIf.pdb

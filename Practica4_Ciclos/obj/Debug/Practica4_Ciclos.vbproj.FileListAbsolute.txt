@@ -4,3 +4,9 @@ D:\SharpDevelop Projects\UdG\Practica4_Ciclos\bin\Debug\Practica4_Ciclos.exe
 D:\SharpDevelop Projects\UdG\Practica4_Ciclos\bin\Debug\Practica4_Ciclos.pdb
 D:\SharpDevelop Projects\UdG\Practica4_Ciclos\obj\Debug\Practica4_Ciclos.exe
 D:\SharpDevelop Projects\UdG\Practica4_Ciclos\obj\Debug\Practica4_Ciclos.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica4_Ciclos\obj\Debug\Practica4_Ciclos.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica4_Ciclos\obj\Debug\Practica4_Ciclos.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica4_Ciclos\obj\Debug\Practica4_Ciclos.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica4_Ciclos\obj\Debug\Practica4_Ciclos.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica4_Ciclos\bin\Debug\Practica4_Ciclos.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica4_Ciclos\bin\Debug\Practica4_Ciclos.pdb
