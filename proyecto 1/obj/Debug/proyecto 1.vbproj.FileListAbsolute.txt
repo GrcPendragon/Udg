@@ -1,0 +1,21 @@
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\bin\Debug\proyecto 1.exe
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\bin\Debug\proyecto 1.pdb
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbprojResolveAssemblyReference.cache
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.exe
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.pdb
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto_1.MainForm.resources
+C:\Users\tecis\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbproj.GenerateResource.Cache
+D:\SharpDevelop Projects\UdG\proyecto 1\bin\Debug\proyecto 1.exe
+D:\SharpDevelop Projects\UdG\proyecto 1\bin\Debug\proyecto 1.pdb
+D:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbprojResolveAssemblyReference.cache
+D:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto_1.MainForm.resources
+D:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbproj.GenerateResource.Cache
+D:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.exe
+D:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.pdb
+F:\SharpDevelop Projects\UdG\proyecto 1\bin\Debug\proyecto 1.exe
+F:\SharpDevelop Projects\UdG\proyecto 1\bin\Debug\proyecto 1.pdb
+F:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbprojResolveAssemblyReference.cache
+F:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto_1.MainForm.resources
+F:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbproj.GenerateResource.Cache
+F:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.exe
+F:\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.pdb

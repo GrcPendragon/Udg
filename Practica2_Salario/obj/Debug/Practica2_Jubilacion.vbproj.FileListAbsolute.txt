@@ -1,0 +1,14 @@
+F:\SharpDevelop Projects\UdG\Practica2_Salario\bin\Debug\Practica2_Jubilacion.exe
+F:\SharpDevelop Projects\UdG\Practica2_Salario\bin\Debug\Practica2_Jubilacion.pdb
+F:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.vbprojResolveAssemblyReference.cache
+F:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Salario.MainForm.resources
+F:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.vbproj.GenerateResource.Cache
+F:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.exe
+F:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.pdb
+D:\SharpDevelop Projects\UdG\Practica2_Salario\bin\Debug\Practica2_Jubilacion.exe
+D:\SharpDevelop Projects\UdG\Practica2_Salario\bin\Debug\Practica2_Jubilacion.pdb
+D:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.vbprojResolveAssemblyReference.cache
+D:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Salario.MainForm.resources
+D:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.vbproj.GenerateResource.Cache
+D:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.exe
+D:\SharpDevelop Projects\UdG\Practica2_Salario\obj\Debug\Practica2_Jubilacion.pdb

@@ -1,0 +1,7 @@
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\bin\Debug\ejemplo4_SelectCase.exe
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\bin\Debug\ejemplo4_SelectCase.pdb
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.vbprojResolveAssemblyReference.cache
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.MainForm.resources
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.vbproj.GenerateResource.Cache
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.exe
+D:\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.pdb
