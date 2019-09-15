@@ -16,12 +16,14 @@ Public Partial Class MainForm
 		'
 	End Sub
 	
-	Dim nombreArchivo As String = "Sin nombre.txt"
+	Dim nombreArchivo As String
+	Dim nombreArchivoDefault As String = "Sin nombre.txt"
 	Dim textoModificado As Boolean = False
 	
 	Sub LimpiarTxt()
 		txtEditor.Text = ""
-		Me.Text = nombreArchivo
+		Me.Text = nombreArchivoDefault
+		nombreArchivo = nombreArchivoDefault
 		textoModificado = False
 	End Sub
 	
@@ -38,6 +40,9 @@ Public Partial Class MainForm
 				Case vbNo
 					LimpiarTxt
 			End Select
+		Else
+			LimpiarTxt
+			
 		End If
 		
 	End Sub
@@ -65,4 +70,45 @@ Public Partial Class MainForm
 			End Select
 		End If
 	End Sub
+	
+	Sub MainFormLoad(sender As Object, e As EventArgs)
+		nombreArchivo = nombreArchivoDefault
+	End Sub
+	
+	Sub AbrirArchivo()
+		Dim respuesta As DialogResult
+		respuesta = opfAbrir.ShowDialog
+		
+		If respuesta = DialogResult.OK Then
+			
+			nombreArchivo = opfAbrir.FileName
+			txtEditor.Text = System.IO.File.ReadAllText(nombreArchivo)
+			textoModificado = False
+			
+			Me.Text = nombreArchivo
+			
+		End If
+		
+		
+	End Sub
+	Sub MnAbrirClick(sender As Object, e As EventArgs)
+		
+		Dim resultado As MsgBoxResult
+		
+		If textoModificado Then
+			resultado = MsgBox("¿Deseas guardar los cambios de "+nombreArchivo+"?",MsgBoxStyle.YesNoCancel, "Bloc de notas")
+			Select Case resultado
+				Case vbYes 'MsgBoxResult.Yes
+					'Guardar cambios y limpiar
+					AbrirArchivo
+				Case vbNo
+					AbrirArchivo
+			End Select
+		Else
+			AbrirArchivo
+		End If
+				
+	End Sub
+	
+	
 End Class

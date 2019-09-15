@@ -81,6 +81,7 @@ Partial Class MainForm
 		Me.toolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.toolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.toolStripStatusLabel4 = New System.Windows.Forms.ToolStripStatusLabel()
+		Me.opfAbrir = New System.Windows.Forms.OpenFileDialog()
 		Me.menuStrip1.SuspendLayout
 		Me.statusStrip1.SuspendLayout
 		Me.SuspendLayout
@@ -139,6 +140,7 @@ Partial Class MainForm
 		Me.mnAbrir.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A),System.Windows.Forms.Keys)
 		Me.mnAbrir.Size = New System.Drawing.Size(231, 22)
 		Me.mnAbrir.Text = "Abrir..."
+		AddHandler Me.mnAbrir.Click, AddressOf Me.MnAbrirClick
 		'
 		'mnGuardar
 		'
@@ -388,18 +390,18 @@ Partial Class MainForm
 		'statusStrip1
 		'
 		Me.statusStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight
+		Me.statusStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
 		Me.statusStrip1.ImeMode = System.Windows.Forms.ImeMode.NoControl
 		Me.statusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripStatusLabel1, Me.toolStripStatusLabel2, Me.toolStripStatusLabel3, Me.toolStripStatusLabel4})
 		Me.statusStrip1.Location = New System.Drawing.Point(0, 356)
 		Me.statusStrip1.Name = "statusStrip1"
-		Me.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
 		Me.statusStrip1.Size = New System.Drawing.Size(662, 24)
 		Me.statusStrip1.TabIndex = 2
 		'
 		'toolStripStatusLabel1
 		'
 		Me.toolStripStatusLabel1.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
-		Me.toolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
+		Me.toolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Bump
 		Me.toolStripStatusLabel1.Name = "toolStripStatusLabel1"
 		Me.toolStripStatusLabel1.Size = New System.Drawing.Size(75, 19)
 		Me.toolStripStatusLabel1.Text = "Line 1, Col 1"
@@ -407,7 +409,7 @@ Partial Class MainForm
 		'toolStripStatusLabel2
 		'
 		Me.toolStripStatusLabel2.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
-		Me.toolStripStatusLabel2.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
+		Me.toolStripStatusLabel2.BorderStyle = System.Windows.Forms.Border3DStyle.Bump
 		Me.toolStripStatusLabel2.Name = "toolStripStatusLabel2"
 		Me.toolStripStatusLabel2.Size = New System.Drawing.Size(39, 19)
 		Me.toolStripStatusLabel2.Text = "100%"
@@ -415,7 +417,7 @@ Partial Class MainForm
 		'toolStripStatusLabel3
 		'
 		Me.toolStripStatusLabel3.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
-		Me.toolStripStatusLabel3.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
+		Me.toolStripStatusLabel3.BorderStyle = System.Windows.Forms.Border3DStyle.Bump
 		Me.toolStripStatusLabel3.Name = "toolStripStatusLabel3"
 		Me.toolStripStatusLabel3.Size = New System.Drawing.Size(95, 19)
 		Me.toolStripStatusLabel3.Text = "Windows(CRLF)"
@@ -423,10 +425,16 @@ Partial Class MainForm
 		'toolStripStatusLabel4
 		'
 		Me.toolStripStatusLabel4.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
-		Me.toolStripStatusLabel4.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
+		Me.toolStripStatusLabel4.BorderStyle = System.Windows.Forms.Border3DStyle.Bump
 		Me.toolStripStatusLabel4.Name = "toolStripStatusLabel4"
 		Me.toolStripStatusLabel4.Size = New System.Drawing.Size(42, 19)
 		Me.toolStripStatusLabel4.Text = "UTF-8"
+		'
+		'opfAbrir
+		'
+		Me.opfAbrir.DefaultExt = "txt"
+		Me.opfAbrir.Filter = "Archivos txt|*.txt|Archivos csv|*.csv|Todos los archivos|*.*"
+		Me.opfAbrir.Title = "Abrir archivo"
 		'
 		'MainForm
 		'
@@ -442,6 +450,7 @@ Partial Class MainForm
 		Me.Name = "MainForm"
 		Me.Text = "Sin nombre.txt"
 		AddHandler FormClosing, AddressOf Me.MainFormFormClosing
+		AddHandler Load, AddressOf Me.MainFormLoad
 		Me.menuStrip1.ResumeLayout(false)
 		Me.menuStrip1.PerformLayout
 		Me.statusStrip1.ResumeLayout(false)
@@ -449,6 +458,7 @@ Partial Class MainForm
 		Me.ResumeLayout(false)
 		Me.PerformLayout
 	End Sub
+	Private opfAbrir As System.Windows.Forms.OpenFileDialog
 	Private mnAcercaDe As System.Windows.Forms.ToolStripMenuItem
 	Private toolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
 	Private mnEnviarComentarios As System.Windows.Forms.ToolStripMenuItem
