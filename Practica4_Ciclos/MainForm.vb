@@ -21,19 +21,26 @@ Public Partial Class MainForm
 	
 	Sub BtnCalcularClick(sender As Object, e As EventArgs)
 		resultado = "El resultado de las sumatorias es: "+vbLf
-		lmInf = Convert.ToInt32(txtInf.Text)
-		lmSup = Convert.ToInt32(txtSup.Text)
-		If lmInf <= lmSup Then
-			cicloFor
-			cicloDoWhileIni
-			cicloDoUntilIni
-			cicloDoWhileFin
-			cicloDoUntilFin
-			lblResultado.Text = resultado
-		Else
-			MsgBox("El limite superior debe ser mayor al limite inferior")
-		End If
 		
+		Try
+			
+			lmInf = Convert.ToInt32(txtInf.Text)
+			lmSup = Convert.ToInt32(txtSup.Text)
+			If lmInf <= lmSup Then
+				cicloFor
+				cicloDoWhileIni
+				cicloDoUntilIni
+				cicloDoWhileFin
+				cicloDoUntilFin
+				lblResultado.Text = resultado
+			Else
+				MsgBox("El limite superior debe ser mayor al limite inferior")
+			End If
+		Catch ex As FormatException
+			MsgBox("Ingrese solo números")
+		Catch ex As Exception
+			MsgBox(ex.ToString)
+		End Try
 	End Sub
 	
 	'Metodo del CicloFor
@@ -140,29 +147,32 @@ Public Partial Class MainForm
 		
 	End Sub
 	
-	Sub TxtSupTextChanged(sender As Object, e As EventArgs)
-		If Not IsNumero(txtSup.Text) Then
-			If txtSup.Text.Length <= 1 Then
-				txtSup.Text = "0"
-				MsgBox("Solo numeros")
-			Else
-				txtSup.Text = txtSup.Text.Remove(txtSup.Text.Length-1)
-				MsgBox("Solo numeros")
-			End If
-		End If
-	End Sub
 	
-	Sub TxtInfTextChanged(sender As Object, e As EventArgs)
-		If Not IsNumero(txtInf.Text) Then
-			If txtInf.Text.Length <= 1 Then
-				txtInf.Text = "0"
-				MsgBox("Solo numeros")
-			Else
-				txtInf.Text = txtInf.Text.Remove(txtInf.Text.Length-1)
-				MsgBox("Solo numeros")
-			End If
-		End If
-	End Sub
+	'Sustituido por el try catch con FormatException
+	
+'	Sub TxtSupTextChanged(sender As Object, e As EventArgs)
+'		If Not IsNumero(txtSup.Text) Then
+'			If txtSup.Text.Length <= 1 Then
+'				txtSup.Text = "0"
+'				MsgBox("Solo numeros")
+'			Else
+'				txtSup.Text = txtSup.Text.Remove(txtSup.Text.Length-1)
+'				MsgBox("Solo numeros")
+'			End If
+'		End If
+'	End Sub
+'	
+'	Sub TxtInfTextChanged(sender As Object, e As EventArgs)
+'		If Not IsNumero(txtInf.Text) Then
+'			If txtInf.Text.Length <= 1 Then
+'				txtInf.Text = "0"
+'				MsgBox("Solo numeros")
+'			Else
+'				txtInf.Text = txtInf.Text.Remove(txtInf.Text.Length-1)
+'				MsgBox("Solo numeros")
+'			End If
+'		End If
+'	End Sub
 	
 	'Funciones
 	

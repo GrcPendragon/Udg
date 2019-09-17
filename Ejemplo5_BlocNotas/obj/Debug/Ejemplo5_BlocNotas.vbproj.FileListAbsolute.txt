@@ -12,3 +12,10 @@ C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo5_BlocNotas\obj\Debug\
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.vbproj.GenerateResource.Cache
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.exe
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\bin\Debug\Ejemplo5_BlocNotas.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\bin\Debug\Ejemplo5_BlocNotas.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo5_BlocNotas\obj\Debug\Ejemplo5_BlocNotas.pdb

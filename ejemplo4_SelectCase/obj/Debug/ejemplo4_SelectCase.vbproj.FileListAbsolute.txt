@@ -12,3 +12,10 @@ C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.vbproj.GenerateResource.Cache
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.exe
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\bin\Debug\ejemplo4_SelectCase.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\bin\Debug\ejemplo4_SelectCase.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo4_SelectCase\obj\Debug\ejemplo4_SelectCase.pdb

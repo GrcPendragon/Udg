@@ -26,3 +26,10 @@ C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo2_Triangulo\obj\Debug\
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.vbproj.GenerateResource.Cache
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.exe
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\bin\Debug\Ejemplo2_Triangulo.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\bin\Debug\Ejemplo2_Triangulo.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo2_Triangulo\obj\Debug\Ejemplo2_Triangulo.pdb

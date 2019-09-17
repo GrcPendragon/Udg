@@ -26,3 +26,10 @@ C:\Users\mg213\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.vbproj.GenerateResource.Cache
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.exe
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\proyecto 1\obj\Debug\proyecto 1.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\bin\Debug\proyecto 1.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\bin\Debug\proyecto 1.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\obj\Debug\proyecto 1.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\obj\Debug\proyecto_1.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\obj\Debug\proyecto 1.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\obj\Debug\proyecto 1.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\proyecto 1\obj\Debug\proyecto 1.pdb

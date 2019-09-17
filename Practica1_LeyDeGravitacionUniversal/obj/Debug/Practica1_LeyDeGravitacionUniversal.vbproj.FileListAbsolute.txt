@@ -26,3 +26,10 @@ C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica1_LeyDeGravitacionUni
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.vbproj.GenerateResource.Cache
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.exe
 C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\bin\Debug\Practica1_LeyDeGravitacionUniversal.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\bin\Debug\Practica1_LeyDeGravitacionUniversal.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica1_LeyDeGravitacionUniversal\obj\Debug\Practica1_LeyDeGravitacionUniversal.pdb
