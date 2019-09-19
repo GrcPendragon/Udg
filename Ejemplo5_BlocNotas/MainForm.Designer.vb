@@ -33,6 +33,7 @@ Partial Class MainForm
 	''' not be able to load this method if it was changed manually.
 	''' </summary>
 	Private Sub InitializeComponent()
+		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
 		Me.txtEditor = New System.Windows.Forms.TextBox()
 		Me.menuStrip1 = New System.Windows.Forms.MenuStrip()
 		Me.mnArchivo = New System.Windows.Forms.ToolStripMenuItem()
@@ -82,6 +83,7 @@ Partial Class MainForm
 		Me.toolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.toolStripStatusLabel4 = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.opfAbrir = New System.Windows.Forms.OpenFileDialog()
+		Me.svdGuardarComo = New System.Windows.Forms.SaveFileDialog()
 		Me.menuStrip1.SuspendLayout
 		Me.statusStrip1.SuspendLayout
 		Me.SuspendLayout
@@ -92,7 +94,7 @@ Partial Class MainForm
 						Or System.Windows.Forms.AnchorStyles.Left)  _
 						Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
 		Me.txtEditor.BorderStyle = System.Windows.Forms.BorderStyle.None
-		Me.txtEditor.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.txtEditor.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 		Me.txtEditor.Location = New System.Drawing.Point(12, 27)
 		Me.txtEditor.Multiline = true
 		Me.txtEditor.Name = "txtEditor"
@@ -148,6 +150,7 @@ Partial Class MainForm
 		Me.mnGuardar.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G),System.Windows.Forms.Keys)
 		Me.mnGuardar.Size = New System.Drawing.Size(231, 22)
 		Me.mnGuardar.Text = "Guardar"
+		AddHandler Me.mnGuardar.Click, AddressOf Me.MnGuardarClick
 		'
 		'mnGuardarComo
 		'
@@ -156,6 +159,7 @@ Partial Class MainForm
 						Or System.Windows.Forms.Keys.S),System.Windows.Forms.Keys)
 		Me.mnGuardarComo.Size = New System.Drawing.Size(231, 22)
 		Me.mnGuardarComo.Text = "Guardar como..."
+		AddHandler Me.mnGuardarComo.Click, AddressOf Me.MnGuardarComoClick
 		'
 		'configurarPáginaToolStripMenuItem
 		'
@@ -436,6 +440,12 @@ Partial Class MainForm
 		Me.opfAbrir.Filter = "Archivos txt|*.txt|Archivos csv|*.csv|Todos los archivos|*.*"
 		Me.opfAbrir.Title = "Abrir archivo"
 		'
+		'svdGuardarComo
+		'
+		Me.svdGuardarComo.DefaultExt = "txt"
+		Me.svdGuardarComo.Filter = "Archivo de texto|*.txt|Archivos csv|*.csv|Todos los archivos|*.*"
+		Me.svdGuardarComo.Title = "Guardar como..."
+		'
 		'MainForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -445,6 +455,7 @@ Partial Class MainForm
 		Me.Controls.Add(Me.statusStrip1)
 		Me.Controls.Add(Me.txtEditor)
 		Me.Controls.Add(Me.menuStrip1)
+		Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
 		Me.MainMenuStrip = Me.menuStrip1
 		Me.MinimumSize = New System.Drawing.Size(400, 300)
 		Me.Name = "MainForm"
@@ -458,6 +469,7 @@ Partial Class MainForm
 		Me.ResumeLayout(false)
 		Me.PerformLayout
 	End Sub
+	Private svdGuardarComo As System.Windows.Forms.SaveFileDialog
 	Private opfAbrir As System.Windows.Forms.OpenFileDialog
 	Private mnAcercaDe As System.Windows.Forms.ToolStripMenuItem
 	Private toolStripSeparator3 As System.Windows.Forms.ToolStripSeparator

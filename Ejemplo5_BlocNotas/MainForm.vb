@@ -19,12 +19,14 @@ Public Partial Class MainForm
 	Dim nombreArchivo As String
 	Dim nombreArchivoDefault As String = "Sin nombre.txt"
 	Dim textoModificado As Boolean = False
+	Dim archivoExiste As Boolean = False
 	
 	Sub LimpiarTxt()
 		txtEditor.Text = ""
 		Me.Text = nombreArchivoDefault
 		nombreArchivo = nombreArchivoDefault
 		textoModificado = False
+		archivoExiste = False
 	End Sub
 	
 	Sub MnNuevoClick(sender As Object, e As EventArgs)
@@ -35,8 +37,9 @@ Public Partial Class MainForm
 			resultado = MsgBox("¿Deseas guardar los cambios de "+nombreArchivo+"?",MsgBoxStyle.YesNoCancel, "Bloc de notas")
 			Select Case resultado
 				Case vbYes 'MsgBoxResult.Yes
-					'Guardar cambios y limpiar
-					LimpiarTxt
+					If Guardar Then
+						LimpiarTxt
+					End If
 				Case vbNo
 					LimpiarTxt
 			End Select
@@ -64,7 +67,7 @@ Public Partial Class MainForm
 			resultado = MsgBox("¿Deseas guardar los cambios de "+nombreArchivo+"?",MsgBoxStyle.YesNoCancel, "Bloc de notas")
 			Select Case resultado
 				Case vbYes 'MsgBoxResult.Yes
-					
+					Guardar
 				Case vbCancel
 					e.Cancel = True
 			End Select
@@ -89,8 +92,8 @@ Public Partial Class MainForm
 			
 		End If
 		
-		
 	End Sub
+	
 	Sub MnAbrirClick(sender As Object, e As EventArgs)
 		
 		Dim resultado As MsgBoxResult
@@ -99,16 +102,54 @@ Public Partial Class MainForm
 			resultado = MsgBox("¿Deseas guardar los cambios de "+nombreArchivo+"?",MsgBoxStyle.YesNoCancel, "Bloc de notas")
 			Select Case resultado
 				Case vbYes 'MsgBoxResult.Yes
-					'Guardar cambios y limpiar
-					AbrirArchivo
+					If Guardar Then
+						AbrirArchivo
+					End If
 				Case vbNo
 					AbrirArchivo
 			End Select
 		Else
 			AbrirArchivo
 		End If
-				
+		
 	End Sub
 	
+	Function Guardar() As Boolean
+		
+		svdGuardarComo.FileName = nombreArchivo
+		
+		If archivoExiste Then
+			
+			System.IO.File.WriteAllText(nombreArchivo,txtEditor.Text)
+			textoModificado = False
+			Me.Text = nombreArchivo
+			
+		Else
+			If svdGuardarComo.ShowDialog = vbOK Then
+				
+				nombreArchivo = svdGuardarComo.FileName
+				System.IO.File.WriteAllText(nombreArchivo,txtEditor.Text)				
+				textoModificado = False
+				Me.Text = nombreArchivo
+				archivoExiste = True
+			Else
+				Return False
+			End If
+		End If
+		Return True
+		
+	End Function
 	
+	Sub MnGuardarComoClick(sender As Object, e As EventArgs)
+		Dim edo_prev As Boolean
+		edo_prev = archivoExiste		
+		archivoExiste = False
+		If Guardar = False Then
+			archivoExiste = edo_prev
+		End If
+	End Sub
+	
+	Sub MnGuardarClick(sender As Object, e As EventArgs)
+		Guardar
+	End Sub
 End Class
