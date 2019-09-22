@@ -5,3 +5,10 @@ C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica5_Album\bin\D
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica5_Album\obj\Debug\Practica5_Album.exe
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica5_Album\obj\Debug\Practica5_Album.pdb
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica5_Album\obj\Debug\Practica5_Album.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\bin\Debug\Practica5_Album.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\bin\Debug\Practica5_Album.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\obj\Debug\Practica5_Album.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\obj\Debug\Practica5_Album.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\obj\Debug\Practica5_Album.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\obj\Debug\Practica5_Album.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica5_Album\obj\Debug\Practica5_Album.pdb

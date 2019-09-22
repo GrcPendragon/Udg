@@ -88,11 +88,11 @@ Public Partial Class MainForm
 		End Try
 	End Sub
 	
-	Sub Hover(btn As Label)
+	Sub Mantener(btn As Label)
 		btn.BackColor = Color.DarkCyan
 	End Sub
 	
-	Sub Leave(btn As Label)
+	Sub Dejar(btn As Label)
 		btn.BackColor = Color.Transparent
 	End Sub
 	
@@ -153,42 +153,42 @@ Public Partial Class MainForm
 	
 	'Cursos sobre botones
 	Sub BtnGuardarComoMouseHover(sender As Object, e As EventArgs)
-		Hover(btnGuardarComo)
+		Mantener(btnGuardarComo)
 	End Sub
 	Sub BtnLimpiarMouseHover(sender As Object, e As EventArgs)
-		Hover(btnLimpiar)
+		Mantener(btnLimpiar)
 	End Sub
 	Sub BtnLimpiar1MouseHover(sender As Object, e As EventArgs)
-		Hover(btnLimpiar1)
+		Mantener(btnLimpiar1)
 	End Sub
 	Sub BtnLimpiar2MouseHover(sender As Object, e As EventArgs)
-		Hover(btnLimpiar2)
+		Mantener(btnLimpiar2)
 	End Sub
 	Sub BtnLimpiar3MouseHover(sender As Object, e As EventArgs)
-		Hover(btnLimpiar3)
+		Mantener(btnLimpiar3)
 	End Sub
 	Sub BtnLimpiar4MouseHover(sender As Object, e As EventArgs)
-		Hover(btnLimpiar4)
+		Mantener(btnLimpiar4)
 	End Sub
 	
 	'Cursor abandona botones
 	Sub BtnGuardarComoMouseLeave(sender As Object, e As EventArgs)
-		Leave(btnGuardarComo)
+		Dejar(btnGuardarComo)
 	End Sub
 	Sub BtnLimpiarMouseLeave(sender As Object, e As EventArgs)
-		Leave(btnLimpiar)
+		Dejar(btnLimpiar)
 	End Sub
 	Sub BtnLimpiar1MouseLeave(sender As Object, e As EventArgs)
-		Leave(btnLimpiar1)
+		Dejar(btnLimpiar1)
 	End Sub
 	Sub BtnLimpiar2MouseLeave(sender As Object, e As EventArgs)
-		Leave(btnLimpiar2)
+		Dejar(btnLimpiar2)
 	End Sub
 	Sub BtnLimpiar3MouseLeave(sender As Object, e As EventArgs)
-		Leave(btnLimpiar3)
+		Dejar(btnLimpiar3)
 	End Sub
 	Sub BtnLimpiar4MouseLeave(sender As Object, e As EventArgs)
-		Leave(btnLimpiar4)
+		Dejar(btnLimpiar4)
 	End Sub
 	
 End Class
