@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica6_MultiplicacionMatrices\bin\Debug\Practica6_MultiplicacionMatrices.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica6_MultiplicacionMatrices\bin\Debug\Practica6_MultiplicacionMatrices.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica6_MultiplicacionMatrices\obj\Debug\Practica6_MultiplicacionMatrices.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica6_MultiplicacionMatrices\obj\Debug\Practica6_MultiplicacionMatrices.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica6_MultiplicacionMatrices\obj\Debug\Practica6_MultiplicacionMatrices.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica6_MultiplicacionMatrices\obj\Debug\Practica6_MultiplicacionMatrices.pdb

@@ -1,0 +1,14 @@
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\bin\Debug\ejemplo7_arreglos.exe
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\bin\Debug\ejemplo7_arreglos.pdb
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbprojResolveAssemblyReference.cache
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.MainForm.resources
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbproj.GenerateResource.Cache
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.exe
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\bin\Debug\ejemplo7_arreglos.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\bin\Debug\ejemplo7_arreglos.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.pdb

@@ -18,7 +18,6 @@ Public Partial Class MainForm
 	
 	Dim imgDefault As Image
 	Dim posActual As Integer
-	Dim rutas(4) As String
 	
 	Sub MainFormLoad(sender As Object, e As EventArgs)
 		imgDefault = pcb1.BackgroundImage
@@ -31,16 +30,16 @@ Public Partial Class MainForm
 		Imagen.BackgroundImage = imgDefault
 	End Sub
 	
-	Sub Cargar (Imagen As PictureBox, posRuta As Integer)
+	Sub Cargar (Imagen As PictureBox)
 		Dim ruta As String
 		Try
 			If opfCargar.ShowDialog = vbOK Then
 				ruta = opfCargar.FileName
-				Imagen.BackgroundImage = Imagen.Image.FromFile(ruta)
-				rutas(posRuta) = ruta
+				Imagen.BackgroundImage = Imagen.BackgroundImage.FromFile(ruta)
 			End If
 		Catch ex As OutOfMemoryException
 			MsgBox("Tipo de archivo no soportado")
+			Cargar(Imagen)
 		Catch ex As Exception
 			MsgBox(ex)			
 		End Try
@@ -52,19 +51,6 @@ Public Partial Class MainForm
 		End If
 	End Sub
 	
-	Function InUse(ruta As String) As Boolean
-		
-		For x As Integer = 0 To rutas.Length
-			
-			If rutas(x) = ruta Then
-				Return True
-			End If
-			
-			Return False
-		Next x
-		
-	End Function
-	
 	Sub BtnGuardarComoClick(sender As Object, e As EventArgs)
 		Dim ruta As String
 		
@@ -72,88 +58,98 @@ Public Partial Class MainForm
 			If Not IsNothing(pcbPrincipal.BackgroundImage) Then
 				If svfGuardarComo.ShowDialog = vbOK Then
 					ruta = svfGuardarComo.FileName
-					If Not InUse(ruta) Then
+					If IsValida(ruta) Then
 						pcbPrincipal.BackgroundImage.Save(ruta)
 					Else
-						MsgBox("Esta imagen esta siendo usada, no se puede sobreescribir.")
+						MsgBox("Tipo de archivo no valido para guardar.")
 						BtnGuardarComoClick(sender, e)
 					End If
+					
 				End If
 			Else
 				MsgBox("No se ha visualizado ninguna imagen para guardar.")
 			End If
 		Catch ex As Runtime.InteropServices.ExternalException
-			MsgBox("Error, no se pudo sobreescribir la imagen.")
+			MsgBox("Esta imagen esta siendo usada, no es posible sobreescribirla.")
+			BtnGuardarComoClick(sender,e)
 		Catch ex As Exception
 			MsgBox("Entró a una exepción: "+ex.ToString)
 		End Try
 	End Sub
 	
+	Function IsValida(ruta As String) As Boolean
+		Dim puntito As Integer
+		Dim extension As String
+		
+		puntito = ruta.LastIndexOf(".")
+		extension = ruta.Substring(puntito+1)
+		
+		Select Case extension
+			Case "jpg"
+				Return True
+			Case "gif"
+				Return True
+			Case "png"
+				Return True
+			Case "bmp"
+				Return True
+		End Select
+		
+		Return False
+	End Function
+	
 	Sub Anterior()
+		Dim metodo As Integer = 1
 		If posActual = 1 Then
 			posActual = 4
 		Else
 			posActual -= 1
 		End If
-		
-		Select Case posActual
-			Case 1
-				If Not pcb1.BackgroundImage Is imgDefault Then
-					MostrarImagen(pcb1)
-				Else
-					Anterior()
-				End If
-			Case 2
-				If Not pcb2.BackgroundImage Is imgDefault Then
-					MostrarImagen(pcb2)
-				Else
-					Anterior()
-				End If
-			Case 3
-				If Not pcb3.BackgroundImage Is imgDefault Then
-					MostrarImagen(pcb3)
-				Else
-					Anterior()
-				End If
-			Case 4
-				If Not pcb4.BackgroundImage Is imgDefault Then
-					MostrarImagen(pcb4)
-				Else
-					Anterior()
-				End If			
-		End Select
-		
+		ImagenActual(metodo)
 	End Sub
 	
 	Sub Siguiente()
+		Dim metodo As Integer = 2
 		If posActual = 4 Then
 			posActual = 1
 		Else
 			posActual += 1
 		End If
+		ImagenActual(metodo)
+	End Sub
+	
+	Sub ImagenActual(metodo As Integer)
 		
 		Select Case posActual
 			Case 1
 				If Not pcb1.BackgroundImage Is imgDefault Then
 					MostrarImagen(pcb1)
+				ElseIf metodo = 1 Then
+					Anterior()		
 				Else
 					Siguiente()
 				End If
 			Case 2
 				If Not pcb2.BackgroundImage Is imgDefault Then
 					MostrarImagen(pcb2)
+				ElseIf metodo = 1 Then
+					Anterior()		
 				Else
 					Siguiente()
 				End If
 			Case 3
 				If Not pcb3.BackgroundImage Is imgDefault Then
 					MostrarImagen(pcb3)
+				ElseIf metodo = 1 Then
+					Anterior()		
 				Else
 					Siguiente()
 				End If
 			Case 4
 				If Not pcb4.BackgroundImage Is imgDefault Then
 					MostrarImagen(pcb4)
+				ElseIf metodo = 1 Then
+					Anterior()		
 				Else
 					Siguiente()
 				End If			
@@ -172,19 +168,19 @@ Public Partial Class MainForm
 	
 	'Botones Cargar
 	Sub BtnCargar1Click(sender As Object, e As EventArgs)
-		Cargar(pcb1, 0)
+		Cargar(pcb1)
 	End Sub
 	
 	Sub BtnCargar2Click(sender As Object, e As EventArgs)
-		Cargar(pcb2, 1)
+		Cargar(pcb2)
 	End Sub
 	
 	Sub BtnCargar3Click(sender As Object, e As EventArgs)
-		Cargar(pcb3, 2)
+		Cargar(pcb3)
 	End Sub
 	
 	Sub BtnCargar4Click(sender As Object, e As EventArgs)
-		Cargar(pcb4, 3)
+		Cargar(pcb4)
 	End Sub
 	
 	'Botones Limpiar	

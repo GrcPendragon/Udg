@@ -1,0 +1,14 @@
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.vbprojResolveAssemblyReference.cache
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.MainForm.resources
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.vbproj.GenerateResource.Cache
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\bin\Debug\ejemplo_6_matrices.exe
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\bin\Debug\ejemplo_6_matrices.pdb
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.exe
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo_6_matrices\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\bin\Debug\ejemplo_6_matrices.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\bin\Debug\ejemplo_6_matrices.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo_6_matrices\obj\Debug\ejemplo_6_matrices.pdb

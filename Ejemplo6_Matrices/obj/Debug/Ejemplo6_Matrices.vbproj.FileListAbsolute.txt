@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\bin\Debug\Ejemplo6_Matrices.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\bin\Debug\Ejemplo6_Matrices.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.vbproj.GenerateResource.Cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.pdb
