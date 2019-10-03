@@ -6,8 +6,9 @@ Public Partial Class MainForm
 
 	End Sub
 	
-	Dim MatrizA(3,3) As Integer
-	Dim MatrizB(3,3) As Integer
+	Dim matrizA(3,3) As Integer
+	Dim matrizB(3,3) As Integer
+	Dim resultado(3,3) As Integer
 	
 	Sub Cargar(Matriz(,) As Integer, txt As TextBox)
 		Dim filas As Integer = txt.Lines.Length - 1
@@ -21,8 +22,10 @@ Public Partial Class MainForm
 	End Sub
 		
 	Sub Button1Click(sender As Object, e As EventArgs)
-		Cargar(MatrizA,textBoxA)
-		Cargar(MatrizB,textBoxB)
+		Cargar(matrizA,textBoxA)
+		Cargar(matrizB,textBoxB)
 		
 	End Sub
+	
+	
 End Class
