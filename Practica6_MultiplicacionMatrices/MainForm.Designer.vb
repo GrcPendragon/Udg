@@ -47,26 +47,28 @@ Partial Class MainForm
 		'
 		'txtMatrizA
 		'
+		Me.txtMatrizA.Font = New System.Drawing.Font("Times New Roman", 12!, System.Drawing.FontStyle.Bold)
 		Me.txtMatrizA.Location = New System.Drawing.Point(53, 56)
 		Me.txtMatrizA.Multiline = true
 		Me.txtMatrizA.Name = "txtMatrizA"
 		Me.txtMatrizA.Size = New System.Drawing.Size(200, 200)
 		Me.txtMatrizA.TabIndex = 0
 		Me.txtMatrizA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		AddHandler Me.txtMatrizA.TextChanged, AddressOf Me.TxtMatrizATextChanged
 		'
 		'txtMatrizB
 		'
+		Me.txtMatrizB.Font = New System.Drawing.Font("Times New Roman", 12!, System.Drawing.FontStyle.Bold)
 		Me.txtMatrizB.Location = New System.Drawing.Point(322, 56)
 		Me.txtMatrizB.Multiline = true
 		Me.txtMatrizB.Name = "txtMatrizB"
 		Me.txtMatrizB.Size = New System.Drawing.Size(200, 200)
 		Me.txtMatrizB.TabIndex = 1
 		Me.txtMatrizB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		AddHandler Me.txtMatrizB.TextChanged, AddressOf Me.TxtMatrizBTextChanged
 		'
 		'txtMatrizC
 		'
+		Me.txtMatrizC.Enabled = false
+		Me.txtMatrizC.Font = New System.Drawing.Font("Times New Roman", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 		Me.txtMatrizC.Location = New System.Drawing.Point(322, 285)
 		Me.txtMatrizC.Multiline = true
 		Me.txtMatrizC.Name = "txtMatrizC"
@@ -120,6 +122,7 @@ Partial Class MainForm
 		Me.btnLimpiar.TabIndex = 7
 		Me.btnLimpiar.Text = "Limpiar valores"
 		Me.btnLimpiar.UseVisualStyleBackColor = true
+		AddHandler Me.btnLimpiar.Click, AddressOf Me.BtnLimpiarClick
 		'
 		'btnSalir
 		'
@@ -129,6 +132,7 @@ Partial Class MainForm
 		Me.btnSalir.TabIndex = 8
 		Me.btnSalir.Text = "Salir"
 		Me.btnSalir.UseVisualStyleBackColor = true
+		AddHandler Me.btnSalir.Click, AddressOf Me.BtnSalirClick
 		'
 		'label4
 		'
