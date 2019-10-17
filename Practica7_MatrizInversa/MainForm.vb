@@ -7,10 +7,9 @@
 ' To change this template use Tools | Options | Coding | Edit Standard Headers.
 '
 Public Partial Class MainForm
-	Dim matriz(2,2) As Integer
-	Dim matrizId(2,2) As Integer
-	Dim matrizInversa(2,2) As Integer
-	
+	Dim matriz(2,2) As Double
+	Dim matrizId(2,2) As Double
+	'Dim matrizInversa(2,2) As Integer
 	Public Sub New()
 		' The Me.InitializeComponent call is required for Windows Forms designer support.
 		Me.InitializeComponent()
@@ -20,7 +19,7 @@ Public Partial Class MainForm
 		'
 	End Sub
 	
-	Sub cargar(ByRef mtr(,) As Integer,ByRef mtrId(,) As Integer, txt As TextBox)
+	Sub cargar(ByRef mtr(,) As Double,ByRef mtrId(,) As Double, txt As TextBox)
 		Dim filas As Integer = txt.Lines.Length-1
 		Dim columnas As Integer = txt.Lines(0).Split(Convert.ToChar(",")).Length - 1
 		ReDim mtr(filas, columnas)
@@ -28,7 +27,7 @@ Public Partial Class MainForm
 		
 		For	i = 0 To filas
 			For j = 0 To columnas
-				mtr(i,j) = Convert.ToInt32(txt.Lines(i).Split(Convert.ToChar(","))(j))
+				mtr(i,j) = Convert.ToDouble(txt.Lines(i).Split(Convert.ToChar(","))(j))
 				If i = j Then
 					mtrId(i,j) = 1
 				Else
@@ -39,15 +38,15 @@ Public Partial Class MainForm
 		
 	End Sub
 	
-	Sub mostrarResultado(matriz(,) As Integer)
+	Sub mostrarResultado(matriz(,) As Double)
 		Try
-			Dim filaA As Integer = txtMatriz.Lines.Length - 1
-			Dim columnaB As Integer = txtMatriz.Lines(0).Split(Convert.ToChar(",")).Length-1
+			Dim filas As Integer = txtMatriz.Lines.Length - 1
+			Dim columnas As Integer = txtMatriz.Lines(0).Split(Convert.ToChar(",")).Length-1
 			
 			
-			For x As Integer = 0 To filaA
-				For y As Integer = 0 To columnaB
-					txtMatrizInversa.Text +="["+ matriz(x,y).ToString + "] "
+			For x As Integer = 0 To filas
+				For y As Integer = 0 To columnas
+					txtMatrizInversa.Text +="["+ matriz(x,y).ToString("0.00") + "] "
 				Next y
 				txtMatrizInversa.Text += vbCrLf
 			Next x
@@ -60,11 +59,44 @@ Public Partial Class MainForm
 		
 	End Sub	
 	
+	Sub calcInversa(matriz(,) As Double, matrizId(,) As Double)
+		
+		Dim filas As Integer = txtMatriz.Lines.Length - 1
+		Dim columnas As Integer = txtMatriz.Lines(0).Split(Convert.ToChar(",")).Length-1
+		
+		For y As Integer = 0 To columnas
+			Dim pivote As Double
+			
+			pivote = matriz(y,y)
+			If Not pivote = 1 Then
+				For x As Integer = 0 To filas
+					
+					matriz(y,x) /= pivote
+					matrizId(y,x) /= pivote
+					
+				Next x
+			End If
+			
+			For fil As Integer = 0 To filas
+				Dim valor As Double = matriz(fil, y)
+				If Not fil = y Then
+					For col As Integer = 0 To columnas
+						
+						matriz(fil, col) = (-valor*matriz(y,col))+ matriz(fil,col)
+						matrizId(fil, col)= (-valor*matrizId(y,col))+matrizId(fil, col)
+						
+					Next col
+				End If
+			Next fil
+		Next y
+		
+	End Sub
+	
 	Sub BtnCalcularClick(sender As Object, e As EventArgs)
 		txtMatrizInversa.Text = ""
 		cargar(matriz, matrizId, txtMatriz)
-		
-		mostrarResultado(matrizInversa)
+		calcInversa(matriz, matrizId)
+		mostrarResultado(matrizId)
 		
 	End Sub
 	
@@ -74,6 +106,6 @@ Public Partial Class MainForm
 	End Sub
 	
 	Sub BtnSalirClick(sender As Object, e As EventArgs)
-		Me.Close		
+		Me.Close
 	End Sub
 End Class
