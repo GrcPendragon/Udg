@@ -12,3 +12,10 @@ C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbproj.GenerateResource.Cache
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.exe
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\bin\Debug\ejemplo7_arreglos.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\bin\Debug\ejemplo7_arreglos.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo7_arreglos\obj\Debug\ejemplo7_arreglos.pdb

@@ -5,3 +5,10 @@ C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.exe
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.pdb
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\bin\Debug\Ejemplo6_Matrices.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\bin\Debug\Ejemplo6_Matrices.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Ejemplo6_Matrices\obj\Debug\Ejemplo6_Matrices.pdb
