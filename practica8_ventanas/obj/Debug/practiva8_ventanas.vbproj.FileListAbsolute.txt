@@ -1,0 +1,8 @@
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\bin\Debug\practiva8_ventanas.exe
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\bin\Debug\practiva8_ventanas.pdb
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\obj\Debug\practiva8_ventanas.vbprojResolveAssemblyReference.cache
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\obj\Debug\practiva8_ventanas.MainForm.resources
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\obj\Debug\practiva8_ventanas.V_llave.resources
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\obj\Debug\practiva8_ventanas.vbproj.GenerateResource.Cache
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\obj\Debug\practiva8_ventanas.exe
+C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\practiva8_ventanas\practiva8_ventanas\obj\Debug\practiva8_ventanas.pdb
