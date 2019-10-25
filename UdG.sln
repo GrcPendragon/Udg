@@ -28,6 +28,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Practica6_MultiplicacionMat
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Practica7_MatrizInversa", "Practica7_MatrizInversa\Practica7_MatrizInversa.vbproj", "{40AF1C32-17E8-4B0D-A523-D6AD608BE21B}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "practica8_ventanas", "practica8_ventanas\practica8_ventanas.vbproj", "{0E768114-5042-47DD-B0E0-82AE3975E1E6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "practica8.1_Encriptacion", "practica8.1_Encriptacion\practica8.1_Encriptacion.vbproj", "{6F2E2D71-88F6-4BA8-8815-C1DA1F0EE74D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +90,13 @@ Global
 		{40AF1C32-17E8-4B0D-A523-D6AD608BE21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{40AF1C32-17E8-4B0D-A523-D6AD608BE21B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40AF1C32-17E8-4B0D-A523-D6AD608BE21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E768114-5042-47DD-B0E0-82AE3975E1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E768114-5042-47DD-B0E0-82AE3975E1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E768114-5042-47DD-B0E0-82AE3975E1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E768114-5042-47DD-B0E0-82AE3975E1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2E2D71-88F6-4BA8-8815-C1DA1F0EE74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2E2D71-88F6-4BA8-8815-C1DA1F0EE74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2E2D71-88F6-4BA8-8815-C1DA1F0EE74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2E2D71-88F6-4BA8-8815-C1DA1F0EE74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
