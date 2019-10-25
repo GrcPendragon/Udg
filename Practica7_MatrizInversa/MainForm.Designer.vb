@@ -42,6 +42,7 @@ Partial Class MainForm
 		Me.btnLimpiar = New System.Windows.Forms.Button()
 		Me.btnSalir = New System.Windows.Forms.Button()
 		Me.pictureBox1 = New System.Windows.Forms.PictureBox()
+		Me.label1 = New System.Windows.Forms.Label()
 		Me.groupBox1.SuspendLayout
 		Me.groupBox2.SuspendLayout
 		CType(Me.pictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
@@ -49,6 +50,7 @@ Partial Class MainForm
 		'
 		'groupBox1
 		'
+		Me.groupBox1.Controls.Add(Me.label1)
 		Me.groupBox1.Controls.Add(Me.txtMatriz)
 		Me.groupBox1.Location = New System.Drawing.Point(12, 12)
 		Me.groupBox1.Name = "groupBox1"
@@ -59,12 +61,13 @@ Partial Class MainForm
 		'
 		'txtMatriz
 		'
-		Me.txtMatriz.Location = New System.Drawing.Point(6, 19)
+		Me.txtMatriz.AccessibleDescription = ""
+		Me.txtMatriz.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.txtMatriz.Location = New System.Drawing.Point(6, 38)
 		Me.txtMatriz.Multiline = true
 		Me.txtMatriz.Name = "txtMatriz"
-		Me.txtMatriz.Size = New System.Drawing.Size(244, 249)
+		Me.txtMatriz.Size = New System.Drawing.Size(244, 230)
 		Me.txtMatriz.TabIndex = 0
-		Me.txtMatriz.Text = "1,1,0"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"1,0,1"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"0,1,0"
 		'
 		'groupBox2
 		'
@@ -78,10 +81,11 @@ Partial Class MainForm
 		'
 		'txtMatrizInversa
 		'
-		Me.txtMatrizInversa.Location = New System.Drawing.Point(6, 19)
+		Me.txtMatrizInversa.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.txtMatrizInversa.Location = New System.Drawing.Point(6, 38)
 		Me.txtMatrizInversa.Multiline = true
 		Me.txtMatrizInversa.Name = "txtMatrizInversa"
-		Me.txtMatrizInversa.Size = New System.Drawing.Size(244, 249)
+		Me.txtMatrizInversa.Size = New System.Drawing.Size(244, 230)
 		Me.txtMatrizInversa.TabIndex = 0
 		'
 		'btnCalcular
@@ -124,6 +128,14 @@ Partial Class MainForm
 		Me.pictureBox1.TabIndex = 5
 		Me.pictureBox1.TabStop = false
 		'
+		'label1
+		'
+		Me.label1.Location = New System.Drawing.Point(6, 19)
+		Me.label1.Name = "label1"
+		Me.label1.Size = New System.Drawing.Size(244, 16)
+		Me.label1.TabIndex = 1
+		Me.label1.Text = "Separar valores por comas (1,0)"
+		'
 		'MainForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -136,7 +148,7 @@ Partial Class MainForm
 		Me.Controls.Add(Me.groupBox2)
 		Me.Controls.Add(Me.groupBox1)
 		Me.Name = "MainForm"
-		Me.Text = "Practica7_MatrizInversa"
+		Me.Text = "Matriz inversa"
 		Me.groupBox1.ResumeLayout(false)
 		Me.groupBox1.PerformLayout
 		Me.groupBox2.ResumeLayout(false)
@@ -144,6 +156,7 @@ Partial Class MainForm
 		CType(Me.pictureBox1,System.ComponentModel.ISupportInitialize).EndInit
 		Me.ResumeLayout(false)
 	End Sub
+	Private label1 As System.Windows.Forms.Label
 	Private pictureBox1 As System.Windows.Forms.PictureBox
 	Private btnSalir As System.Windows.Forms.Button
 	Private btnLimpiar As System.Windows.Forms.Button

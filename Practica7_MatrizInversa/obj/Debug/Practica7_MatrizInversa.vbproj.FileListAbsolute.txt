@@ -5,3 +5,10 @@ C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica7_MatrizInver
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica7_MatrizInversa\bin\Debug\Practica7_MatrizInversa.pdb
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.exe
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\bin\Debug\Practica7_MatrizInversa.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\bin\Debug\Practica7_MatrizInversa.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\Practica7_MatrizInversa\obj\Debug\Practica7_MatrizInversa.pdb

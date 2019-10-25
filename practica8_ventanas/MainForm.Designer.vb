@@ -1,8 +1,8 @@
 ﻿'
 ' Created by SharpDevelop.
-' User: E19
-' Date: 06/09/2019
-' Time: 07:12 a. m.
+' User: E-PROFESOR
+' Date: 18/10/2019
+' Time: 07:44 a. m.
 ' 
 ' To change this template use Tools | Options | Coding | Edit Standard Headers.
 '
@@ -33,11 +33,32 @@ Partial Class MainForm
 	''' not be able to load this method if it was changed manually.
 	''' </summary>
 	Private Sub InitializeComponent()
+		Me.buttonAbrir = New System.Windows.Forms.Button()
+		Me.SuspendLayout
+		'
+		'buttonAbrir
+		'
+		Me.buttonAbrir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.buttonAbrir.Location = New System.Drawing.Point(41, 38)
+		Me.buttonAbrir.Name = "buttonAbrir"
+		Me.buttonAbrir.Size = New System.Drawing.Size(247, 50)
+		Me.buttonAbrir.TabIndex = 0
+		Me.buttonAbrir.Text = "Abrir ventana secundaria"
+		Me.buttonAbrir.UseVisualStyleBackColor = true
+		AddHandler Me.buttonAbrir.Click, AddressOf Me.ButtonAbrirClick
 		'
 		'MainForm
 		'
+		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.ClientSize = New System.Drawing.Size(323, 139)
+		Me.Controls.Add(Me.buttonAbrir)
+		Me.MaximizeBox = false
+		Me.MinimizeBox = false
 		Me.Name = "MainForm"
-		Me.Text = "Practica_"
+		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+		Me.Text = "Encriptar/Desencriptar"
+		Me.ResumeLayout(false)
 	End Sub
+	Private buttonAbrir As System.Windows.Forms.Button
 End Class

@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 ' change them to the information which is associated with the assembly
 ' you compile.
 
-<assembly: AssemblyTitle("Practica_")>
+<assembly: AssemblyTitle("practiva8_ventanas")>
 <assembly: AssemblyDescription("")>
 <assembly: AssemblyConfiguration("")>
 <assembly: AssemblyCompany("")>
-<assembly: AssemblyProduct("Practica_")>
+<assembly: AssemblyProduct("practiva8_ventanas")>
 <assembly: AssemblyCopyright("Copyright 2019")>
 <assembly: AssemblyTrademark("")>
 <assembly: AssemblyCulture("")>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{CE422EC6-E407-4191-85AA-7103C08AA4B3}</ProjectGuid>
+    <ProjectGuid>{5B69CD4A-42B2-4F14-A4CA-7EF1139E16D3}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
     <MyType>WindowsForms</MyType>
-    <RootNamespace>Practica_</RootNamespace>
-    <AssemblyName>Practica_</AssemblyName>
+    <RootNamespace>practiva8_ventanas</RootNamespace>
+    <AssemblyName>practiva8_ventanas</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -62,11 +62,23 @@
     <Compile Include="MainForm.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="V_llave.Designer.vb">
+      <DependentUpon>V_llave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="V_llave.vb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V_llave.resx">
+      <DependentUpon>V_llave.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
