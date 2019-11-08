@@ -42,6 +42,9 @@ Partial Class MainForm
 		Me.comboBoxCiclo = New System.Windows.Forms.ComboBox()
 		Me.buttonCargarCurso = New System.Windows.Forms.Button()
 		Me.buttonCancelar = New System.Windows.Forms.Button()
+		Me.buttonAgregarAlmuno = New System.Windows.Forms.Button()
+		Me.buttonModificarAlunno = New System.Windows.Forms.Button()
+		Me.buttonEliminarAlumno = New System.Windows.Forms.Button()
 		CType(Me.dataGridViewAlumno,System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.dataGridViewMateria,System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.dataGridViewCursa,System.ComponentModel.ISupportInitialize).BeginInit
@@ -126,6 +129,7 @@ Partial Class MainForm
 		Me.comboBoxCiclo.Name = "comboBoxCiclo"
 		Me.comboBoxCiclo.Size = New System.Drawing.Size(157, 21)
 		Me.comboBoxCiclo.TabIndex = 6
+		AddHandler Me.comboBoxCiclo.SelectedIndexChanged, AddressOf Me.ComboBoxCicloSelectedIndexChanged
 		'
 		'buttonCargarCurso
 		'
@@ -147,11 +151,43 @@ Partial Class MainForm
 		Me.buttonCancelar.UseVisualStyleBackColor = true
 		AddHandler Me.buttonCancelar.Click, AddressOf Me.ButtonCancelarClick
 		'
+		'buttonAgregarAlmuno
+		'
+		Me.buttonAgregarAlmuno.Location = New System.Drawing.Point(513, 58)
+		Me.buttonAgregarAlmuno.Name = "buttonAgregarAlmuno"
+		Me.buttonAgregarAlmuno.Size = New System.Drawing.Size(157, 40)
+		Me.buttonAgregarAlmuno.TabIndex = 9
+		Me.buttonAgregarAlmuno.Text = "Agregar alumno"
+		Me.buttonAgregarAlmuno.UseVisualStyleBackColor = true
+		AddHandler Me.buttonAgregarAlmuno.Click, AddressOf Me.ButtonAgregarAlmunoClick
+		'
+		'buttonModificarAlunno
+		'
+		Me.buttonModificarAlunno.Location = New System.Drawing.Point(513, 104)
+		Me.buttonModificarAlunno.Name = "buttonModificarAlunno"
+		Me.buttonModificarAlunno.Size = New System.Drawing.Size(78, 40)
+		Me.buttonModificarAlunno.TabIndex = 10
+		Me.buttonModificarAlunno.Text = "Modificar alumno"
+		Me.buttonModificarAlunno.UseVisualStyleBackColor = true
+		AddHandler Me.buttonModificarAlunno.Click, AddressOf Me.ButtonModificarAlunnoClick
+		'
+		'buttonEliminarAlumno
+		'
+		Me.buttonEliminarAlumno.Location = New System.Drawing.Point(592, 104)
+		Me.buttonEliminarAlumno.Name = "buttonEliminarAlumno"
+		Me.buttonEliminarAlumno.Size = New System.Drawing.Size(78, 40)
+		Me.buttonEliminarAlumno.TabIndex = 11
+		Me.buttonEliminarAlumno.Text = "Eliminar alumno"
+		Me.buttonEliminarAlumno.UseVisualStyleBackColor = true
+		'
 		'MainForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(682, 406)
+		Me.Controls.Add(Me.buttonEliminarAlumno)
+		Me.Controls.Add(Me.buttonModificarAlunno)
+		Me.Controls.Add(Me.buttonAgregarAlmuno)
 		Me.Controls.Add(Me.buttonCancelar)
 		Me.Controls.Add(Me.buttonCargarCurso)
 		Me.Controls.Add(Me.comboBoxCiclo)
@@ -169,6 +205,9 @@ Partial Class MainForm
 		CType(Me.dataGridViewCursa,System.ComponentModel.ISupportInitialize).EndInit
 		Me.ResumeLayout(false)
 	End Sub
+	Private buttonEliminarAlumno As System.Windows.Forms.Button
+	Private buttonModificarAlunno As System.Windows.Forms.Button
+	Private buttonAgregarAlmuno As System.Windows.Forms.Button
 	Private buttonCancelar As System.Windows.Forms.Button
 	Private buttonCargarCurso As System.Windows.Forms.Button
 	Private comboBoxCiclo As System.Windows.Forms.ComboBox

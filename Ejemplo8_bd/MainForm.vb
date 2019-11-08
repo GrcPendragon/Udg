@@ -29,7 +29,7 @@ Public Partial Class MainForm
 		ButtonMateriaClick(Nothing,Nothing)
 		ButtonCargarCursoClick(Nothing,Nothing)
 	End Sub
-
+	
 	Sub ButtonAlumnoClick(sender As Object, e As EventArgs)
 		dataGridViewAlumno.DataSource = baseDatos.ConsultaBD( "select id_alumno as ID, nombre as Nomnbre, codigo as Código, carrera as Carrera from alumno")
 	End Sub
@@ -44,9 +44,13 @@ Public Partial Class MainForm
 		id_alumno = dataGridViewAlumno.CurrentRow.Cells(0).Value.ToString
 		id_materia = dataGridViewMateria.CurrentRow.Cells(0).Value.ToString
 		ciclo = comboBoxCiclo.Text
-		sql = "insert into cursa (id_alumno, id_materia, ciclo) values (" + id_alumno + "," + id_materia + ",'" + ciclo + "')"
-		baseDatos.InsertarBD(sql)		
-		ButtonCargarCursoClick(Nothing, Nothing)
+		If isInscrito(id_alumno,id_materia,ciclo) Then
+			sql = "insert into cursa (id_alumno, id_materia, ciclo) values (" + id_alumno + "," + id_materia + ",'" + ciclo + "')"
+			baseDatos.InsertarBD(sql)		
+			ButtonCargarCursoClick(Nothing, Nothing)
+		Else
+			MsgBox("El alumno ya esta inscrito.")
+		End If
 	End Sub
 	
 	Sub ButtonCargarCursoClick(sender As Object, e As EventArgs)
@@ -68,6 +72,58 @@ Public Partial Class MainForm
 			buttonCargarCursoClick(Nothing, Nothing)
 			
 		End If
+	End Sub
+	
+	Function isInscrito(id_alumno As String, id_materia As String, ciclo As String) As Boolean
+		Dim sql As String
+		
+		sql = "Select * from cursa where id_alumno = "+id_alumno+" and id_materia = "+id_materia+" and Ciclo = '"+ciclo+"'"
+		
+		If baseDatos.ConsultaBD(sql).Rows.Count > 0 Then
+			Return False
+		End If
+		
+		Return True
+	End Function
+	
+	Sub ComboBoxCicloSelectedIndexChanged(sender As Object, e As EventArgs)
+		ButtonMateriaClick(Nothing,Nothing)
+	End Sub
+	
+	Sub ButtonAgregarAlmunoClick(sender As Object, e As EventArgs)
+		Dim ventana As New V_agregarAlumno
+		
+		If ventana.ShowDialog = vbOK Then
 			
+			Dim nombre, codigo, carrera, sql As String
+			Dim band As Boolean = False
+			
+			nombre = ventana.nombre
+			codigo = ventana.codigo
+			carrera = ventana.carrera
+			
+			For i As Integer = 0 To dataGridViewAlumno.RowCount -1
+				If dataGridViewAlumno.Rows(i).Cells(2).Value.ToString = codigo Then
+					band = True
+					Exit For
+				End If
+			Next i
+			
+			If band Then
+				MsgBox("El alumno se encuentra registrado")
+			Else
+				sql = "Insert into alumno (nombre, codigo, carrera) values ('"+nombre+"','"+codigo+"','"+carrera+"')"
+				baseDatos.InsertarBD(sql)
+				ButtonAlumnoClick(Nothing, Nothing)				
+			End If
+		End If
+	End Sub
+	
+	Sub ButtonModificarAlunnoClick(sender As Object, e As EventArgs)
+		Dim ventana As V_agregarAlumno
+		ventana.nombre = dataGridViewAlumno.CurrentRow.Cells(1).Value.ToString
+		ventana.codigo = dataGridViewAlumno.CurrentRow.Cells(2).Value.ToString
+		ventana.carrera = dataGridViewAlumno.CurrentRow.Cells(3).Value.ToString
+		
 	End Sub
 End Class
