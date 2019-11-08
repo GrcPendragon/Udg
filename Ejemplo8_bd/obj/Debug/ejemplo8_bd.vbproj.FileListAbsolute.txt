@@ -5,11 +5,26 @@ C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo8_bd\ejemplo8_bd\obj\
 C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo8_bd\ejemplo8_bd\obj\Debug\ejemplo8_bd.pdb
 C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo8_bd\ejemplo8_bd\obj\Debug\ejemplo8_bd.MainForm.resources
 C:\Users\E-PROFESOR\Documents\SharpDevelop Projects\ejemplo8_bd\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbproj.GenerateResource.Cache
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbprojResolveAssemblyReference.cache
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\Ejemplo8_bd.MainForm.resources
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbproj.GenerateResource.Cache
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\Ejemplo8_bd.exe
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\Ejemplo8_bd.pdb
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\bin\Debug\Ejemplo8_bd.exe
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\bin\Debug\Ejemplo8_bd.pdb
-C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\Ejemplo8_bd.V_agregarAlumno.resources
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbprojResolveAssemblyReference.cache
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\obj\Debug\ejemplo8_bd.MainForm.resources
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbproj.GenerateResource.Cache
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\obj\Debug\ejemplo8_bd.exe
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\obj\Debug\ejemplo8_bd.pdb
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\bin\Debug\ejemplo8_bd.exe
+C:\Users\E-PROFESOR\Documents\ejemplo8_bd\bin\Debug\ejemplo8_bd.pdb
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\bin\Debug\ejemplo8_bd.exe
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\bin\Debug\ejemplo8_bd.pdb
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbprojResolveAssemblyReference.cache
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\obj\Debug\ejemplo8_bd.MainForm.resources
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbproj.GenerateResource.Cache
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\obj\Debug\ejemplo8_bd.exe
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\obj\Debug\ejemplo8_bd.pdb
+C:\Users\E-PROFESOR\Desktop\ejemplo8_bd\obj\Debug\ejemplo8_bd.V_agregarAlumno.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\bin\Debug\ejemplo8_bd.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\bin\Debug\ejemplo8_bd.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbprojResolveAssemblyReference.cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\obj\Debug\ejemplo8_bd.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\obj\Debug\ejemplo8_bd.V_agregarAlumno.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\obj\Debug\ejemplo8_bd.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\obj\Debug\ejemplo8_bd.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\ejemplo8_bd\obj\Debug\ejemplo8_bd.pdb

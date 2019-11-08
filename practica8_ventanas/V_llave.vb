@@ -1,8 +1,8 @@
 ﻿'
 ' Created by SharpDevelop.
-' User: E-PROFESOR
-' Date: 18/10/2019
-' Time: 07:46 a. m.
+' User: Fausto Garcia
+' Date: 24/10/2019
+' Time: 08:28 a. m.
 ' 
 ' To change this template use Tools | Options | Coding | Edit Standard Headers.
 '
@@ -18,9 +18,6 @@ Public Partial Class V_llave
 		Me.InitializeComponent()
 		labelTexto.Text = cadena		
 	End Sub
-	
-	
-	
 	
 	
 	Sub ButtonCancelarClick(sender As Object, e As EventArgs)
@@ -39,4 +36,5 @@ Public Partial Class V_llave
 	Sub V_llaveLoad(sender As Object, e As EventArgs)
 		
 	End Sub
+	
 End Class

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{04D5C171-6AC5-4E14-87D8-DBB83426DFB8}</ProjectGuid>
+    <ProjectGuid>{C15D65CE-9AD0-47AA-B239-78BCB2B5042B}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
     <MyType>WindowsForms</MyType>
-    <RootNamespace>Ejemplo8_bd</RootNamespace>
-    <AssemblyName>Ejemplo8_bd</AssemblyName>
+    <RootNamespace>ejemplo8_bd</RootNamespace>
+    <AssemblyName>ejemplo8_bd</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>

@@ -23,16 +23,11 @@ Public Partial Class MainForm
 		'cadena = InputBox("Llave para encriptar","Llave")
 		
 		If ventana.ShowDialog = vbOK Then
-			'MsgBox("presiono boton aceptar")
 			cadena = ventana.texto
-			MsgBox(cadena)
+			
 		Else
 			MsgBox("presiono boton cancelar")
 		End If
-		
-		
-		
-		
 		
 	End Sub
 End Class

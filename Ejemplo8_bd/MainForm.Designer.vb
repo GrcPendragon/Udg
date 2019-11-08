@@ -41,9 +41,9 @@ Partial Class MainForm
 		Me.buttonInscribir = New System.Windows.Forms.Button()
 		Me.comboBoxCiclo = New System.Windows.Forms.ComboBox()
 		Me.buttonCargarCurso = New System.Windows.Forms.Button()
-		Me.buttonCancelar = New System.Windows.Forms.Button()
-		Me.buttonAgregarAlmuno = New System.Windows.Forms.Button()
-		Me.buttonModificarAlunno = New System.Windows.Forms.Button()
+		Me.buttoncancelarInsc = New System.Windows.Forms.Button()
+		Me.buttonAgregarAlumno = New System.Windows.Forms.Button()
+		Me.buttonModificarAlumno = New System.Windows.Forms.Button()
 		Me.buttonEliminarAlumno = New System.Windows.Forms.Button()
 		CType(Me.dataGridViewAlumno,System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.dataGridViewMateria,System.ComponentModel.ISupportInitialize).BeginInit
@@ -62,6 +62,7 @@ Partial Class MainForm
 		Me.dataGridViewAlumno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
 		Me.dataGridViewAlumno.Size = New System.Drawing.Size(495, 130)
 		Me.dataGridViewAlumno.TabIndex = 0
+		AddHandler Me.dataGridViewAlumno.CellClick, AddressOf Me.DataGridViewAlumnoCellClick
 		'
 		'buttonAlumno
 		'
@@ -75,7 +76,7 @@ Partial Class MainForm
 		'
 		'buttonMateria
 		'
-		Me.buttonMateria.Location = New System.Drawing.Point(513, 168)
+		Me.buttonMateria.Location = New System.Drawing.Point(513, 148)
 		Me.buttonMateria.Name = "buttonMateria"
 		Me.buttonMateria.Size = New System.Drawing.Size(157, 40)
 		Me.buttonMateria.TabIndex = 2
@@ -113,9 +114,9 @@ Partial Class MainForm
 		'
 		'buttonInscribir
 		'
-		Me.buttonInscribir.Location = New System.Drawing.Point(513, 325)
+		Me.buttonInscribir.Location = New System.Drawing.Point(513, 328)
 		Me.buttonInscribir.Name = "buttonInscribir"
-		Me.buttonInscribir.Size = New System.Drawing.Size(157, 20)
+		Me.buttonInscribir.Size = New System.Drawing.Size(157, 22)
 		Me.buttonInscribir.TabIndex = 5
 		Me.buttonInscribir.Text = "Inscribir a curso"
 		Me.buttonInscribir.UseVisualStyleBackColor = true
@@ -123,59 +124,59 @@ Partial Class MainForm
 		'
 		'comboBoxCiclo
 		'
+		Me.comboBoxCiclo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		Me.comboBoxCiclo.FormattingEnabled = true
 		Me.comboBoxCiclo.Items.AddRange(New Object() {"2020A", "2020B", "2021A", "2021B"})
 		Me.comboBoxCiclo.Location = New System.Drawing.Point(513, 272)
 		Me.comboBoxCiclo.Name = "comboBoxCiclo"
 		Me.comboBoxCiclo.Size = New System.Drawing.Size(157, 21)
 		Me.comboBoxCiclo.TabIndex = 6
-		AddHandler Me.comboBoxCiclo.SelectedIndexChanged, AddressOf Me.ComboBoxCicloSelectedIndexChanged
 		'
 		'buttonCargarCurso
 		'
 		Me.buttonCargarCurso.Location = New System.Drawing.Point(513, 299)
 		Me.buttonCargarCurso.Name = "buttonCargarCurso"
-		Me.buttonCargarCurso.Size = New System.Drawing.Size(157, 20)
+		Me.buttonCargarCurso.Size = New System.Drawing.Size(157, 23)
 		Me.buttonCargarCurso.TabIndex = 7
 		Me.buttonCargarCurso.Text = "Cargar curso"
 		Me.buttonCargarCurso.UseVisualStyleBackColor = true
 		AddHandler Me.buttonCargarCurso.Click, AddressOf Me.ButtonCargarCursoClick
 		'
-		'buttonCancelar
+		'buttoncancelarInsc
 		'
-		Me.buttonCancelar.Location = New System.Drawing.Point(513, 351)
-		Me.buttonCancelar.Name = "buttonCancelar"
-		Me.buttonCancelar.Size = New System.Drawing.Size(157, 20)
-		Me.buttonCancelar.TabIndex = 8
-		Me.buttonCancelar.Text = "Cancelar inscripción"
-		Me.buttonCancelar.UseVisualStyleBackColor = true
-		AddHandler Me.buttonCancelar.Click, AddressOf Me.ButtonCancelarClick
+		Me.buttoncancelarInsc.Location = New System.Drawing.Point(513, 356)
+		Me.buttoncancelarInsc.Name = "buttoncancelarInsc"
+		Me.buttoncancelarInsc.Size = New System.Drawing.Size(157, 22)
+		Me.buttoncancelarInsc.TabIndex = 8
+		Me.buttoncancelarInsc.Text = "Cancelar inscripción"
+		Me.buttoncancelarInsc.UseVisualStyleBackColor = true
+		AddHandler Me.buttoncancelarInsc.Click, AddressOf Me.ButtoncancelarInscClick
 		'
-		'buttonAgregarAlmuno
+		'buttonAgregarAlumno
 		'
-		Me.buttonAgregarAlmuno.Location = New System.Drawing.Point(513, 58)
-		Me.buttonAgregarAlmuno.Name = "buttonAgregarAlmuno"
-		Me.buttonAgregarAlmuno.Size = New System.Drawing.Size(157, 40)
-		Me.buttonAgregarAlmuno.TabIndex = 9
-		Me.buttonAgregarAlmuno.Text = "Agregar alumno"
-		Me.buttonAgregarAlmuno.UseVisualStyleBackColor = true
-		AddHandler Me.buttonAgregarAlmuno.Click, AddressOf Me.ButtonAgregarAlmunoClick
+		Me.buttonAgregarAlumno.Location = New System.Drawing.Point(513, 56)
+		Me.buttonAgregarAlumno.Name = "buttonAgregarAlumno"
+		Me.buttonAgregarAlumno.Size = New System.Drawing.Size(157, 40)
+		Me.buttonAgregarAlumno.TabIndex = 9
+		Me.buttonAgregarAlumno.Text = "Agregar alumno"
+		Me.buttonAgregarAlumno.UseVisualStyleBackColor = true
+		AddHandler Me.buttonAgregarAlumno.Click, AddressOf Me.ButtonAgregarAlumnoClick
 		'
-		'buttonModificarAlunno
+		'buttonModificarAlumno
 		'
-		Me.buttonModificarAlunno.Location = New System.Drawing.Point(513, 104)
-		Me.buttonModificarAlunno.Name = "buttonModificarAlunno"
-		Me.buttonModificarAlunno.Size = New System.Drawing.Size(78, 40)
-		Me.buttonModificarAlunno.TabIndex = 10
-		Me.buttonModificarAlunno.Text = "Modificar alumno"
-		Me.buttonModificarAlunno.UseVisualStyleBackColor = true
-		AddHandler Me.buttonModificarAlunno.Click, AddressOf Me.ButtonModificarAlunnoClick
+		Me.buttonModificarAlumno.Location = New System.Drawing.Point(513, 102)
+		Me.buttonModificarAlumno.Name = "buttonModificarAlumno"
+		Me.buttonModificarAlumno.Size = New System.Drawing.Size(69, 40)
+		Me.buttonModificarAlumno.TabIndex = 10
+		Me.buttonModificarAlumno.Text = "Modificar alumno"
+		Me.buttonModificarAlumno.UseVisualStyleBackColor = true
+		AddHandler Me.buttonModificarAlumno.Click, AddressOf Me.ButtonModificarAlumnoClick
 		'
 		'buttonEliminarAlumno
 		'
-		Me.buttonEliminarAlumno.Location = New System.Drawing.Point(592, 104)
+		Me.buttonEliminarAlumno.Location = New System.Drawing.Point(600, 102)
 		Me.buttonEliminarAlumno.Name = "buttonEliminarAlumno"
-		Me.buttonEliminarAlumno.Size = New System.Drawing.Size(78, 40)
+		Me.buttonEliminarAlumno.Size = New System.Drawing.Size(70, 40)
 		Me.buttonEliminarAlumno.TabIndex = 11
 		Me.buttonEliminarAlumno.Text = "Eliminar alumno"
 		Me.buttonEliminarAlumno.UseVisualStyleBackColor = true
@@ -186,9 +187,9 @@ Partial Class MainForm
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(682, 406)
 		Me.Controls.Add(Me.buttonEliminarAlumno)
-		Me.Controls.Add(Me.buttonModificarAlunno)
-		Me.Controls.Add(Me.buttonAgregarAlmuno)
-		Me.Controls.Add(Me.buttonCancelar)
+		Me.Controls.Add(Me.buttonModificarAlumno)
+		Me.Controls.Add(Me.buttonAgregarAlumno)
+		Me.Controls.Add(Me.buttoncancelarInsc)
 		Me.Controls.Add(Me.buttonCargarCurso)
 		Me.Controls.Add(Me.comboBoxCiclo)
 		Me.Controls.Add(Me.buttonInscribir)
@@ -206,9 +207,9 @@ Partial Class MainForm
 		Me.ResumeLayout(false)
 	End Sub
 	Private buttonEliminarAlumno As System.Windows.Forms.Button
-	Private buttonModificarAlunno As System.Windows.Forms.Button
-	Private buttonAgregarAlmuno As System.Windows.Forms.Button
-	Private buttonCancelar As System.Windows.Forms.Button
+	Private buttonModificarAlumno As System.Windows.Forms.Button
+	Private buttonAgregarAlumno As System.Windows.Forms.Button
+	Private buttoncancelarInsc As System.Windows.Forms.Button
 	Private buttonCargarCurso As System.Windows.Forms.Button
 	Private comboBoxCiclo As System.Windows.Forms.ComboBox
 	Private buttonInscribir As System.Windows.Forms.Button

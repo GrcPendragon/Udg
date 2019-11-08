@@ -5,3 +5,10 @@ C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\practica8.1_Encriptac
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\practica8.1_Encriptacion\obj\Debug\practica8.1_Encriptacion.exe
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\practica8.1_Encriptacion\obj\Debug\practica8.1_Encriptacion.pdb
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\practica8.1_Encriptacion\obj\Debug\practica8.__Encriptacion.V_llave.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\bin\Debug\practica8.1_Encriptacion.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\bin\Debug\practica8.1_Encriptacion.pdb
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\obj\Debug\practica8.__Encriptacion.MainForm.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\obj\Debug\practica8.__Encriptacion.V_llave.resources
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\obj\Debug\practica8.1_Encriptacion.vbproj.GenerateResource.Cache
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\obj\Debug\practica8.1_Encriptacion.exe
+C:\Users\mg213\Documents\SharpDevelop Projects\UdG\practica8.1_Encriptacion\obj\Debug\practica8.1_Encriptacion.pdb
