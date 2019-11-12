@@ -130,6 +130,25 @@ Public Partial Class MainForm
 	End Sub
 	
 	Sub DataGridViewAlumnoCellClick(sender As Object, e As DataGridViewCellEventArgs)
+		
+	End Sub
+	
+	Sub ButtonEliminarAlumnoClick(sender As Object, e As EventArgs)
+		Dim id, sql As String 	
+		
+		id = dataGridViewAlumno.CurrentRow.Cells(0).Value.ToString
+		sql = "delete from alumno where id_alumno = "+id
+		BaseDatos.EliminarBD(sql)
+		
+		sql = "Delete from cursa where id_alumno = "+id
+		BaseDatos.EliminarBD(sql)
+		
+		ButtonAlumnoClick(Nothing, Nothing)
+		ButtonCargarCursoClick(Nothing, Nothing)
+		
+	End Sub
+	
+	Sub DataGridViewAlumnoSelectionChanged(sender As Object, e As EventArgs)
 		Dim codigo, materia, ciclo As String
 		
 		codigo = dataGridViewAlumno.CurrentRow.Cells(2).Value.ToString

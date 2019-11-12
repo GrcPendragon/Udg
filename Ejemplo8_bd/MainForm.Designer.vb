@@ -63,6 +63,7 @@ Partial Class MainForm
 		Me.dataGridViewAlumno.Size = New System.Drawing.Size(495, 130)
 		Me.dataGridViewAlumno.TabIndex = 0
 		AddHandler Me.dataGridViewAlumno.CellClick, AddressOf Me.DataGridViewAlumnoCellClick
+		AddHandler Me.dataGridViewAlumno.SelectionChanged, AddressOf Me.DataGridViewAlumnoSelectionChanged
 		'
 		'buttonAlumno
 		'
@@ -92,7 +93,6 @@ Partial Class MainForm
 		Me.dataGridViewMateria.Location = New System.Drawing.Point(12, 148)
 		Me.dataGridViewMateria.MultiSelect = false
 		Me.dataGridViewMateria.Name = "dataGridViewMateria"
-		Me.dataGridViewMateria.ReadOnly = true
 		Me.dataGridViewMateria.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
 		Me.dataGridViewMateria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
 		Me.dataGridViewMateria.Size = New System.Drawing.Size(495, 118)
@@ -180,6 +180,7 @@ Partial Class MainForm
 		Me.buttonEliminarAlumno.TabIndex = 11
 		Me.buttonEliminarAlumno.Text = "Eliminar alumno"
 		Me.buttonEliminarAlumno.UseVisualStyleBackColor = true
+		AddHandler Me.buttonEliminarAlumno.Click, AddressOf Me.ButtonEliminarAlumnoClick
 		'
 		'MainForm
 		'
