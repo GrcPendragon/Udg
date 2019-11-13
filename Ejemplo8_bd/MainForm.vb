@@ -26,52 +26,15 @@ Public Partial Class MainForm
 		comboBoxCiclo.SelectedIndex = 0
 		BaseDatos = New BD("base_datos.mdb")
 		
-		ButtonAlumnoClick(Nothing,Nothing)
 		ButtonMateriaClick(Nothing,Nothing)
 		ButtonCargarCursoClick(Nothing,Nothing)
+		ButtonAlumnoClick(Nothing,Nothing)
+		mostrarBotones()
 		
 	End Sub
-	
+	'ALUMNO
 	Sub ButtonAlumnoClick(sender As Object, e As EventArgs)
 		dataGridViewAlumno.DataSource = BaseDatos.ConsultaBD( "select id_alumno as ID, nombre as Nombre, codigo as Código, carrera as Carrera from alumno")
-	End Sub
-	
-	
-	
-	Sub ButtonMateriaClick(sender As Object, e As EventArgs)		
-		dataGridViewMateria.DataSource = BaseDatos.ConsultaBD("select id_materia as ID, nombre as Nombre, nrc as NRC, clave as Clave from materia" )
-	End Sub
-	
-	Sub ButtonInscribirClick(sender As Object, e As EventArgs)
-		Dim id_alumno, id_materia, ciclo, sql As String
-		
-		id_alumno = dataGridViewAlumno.CurrentRow.Cells(0).Value.ToString
-		id_materia = dataGridViewMateria.CurrentRow.Cells(0).Value.ToString
-		ciclo = comboBoxCiclo.Text
-		sql = "insert into cursa (id_alumno, id_materia, ciclo) values (" + id_alumno + "," + id_materia + ",'" + ciclo + "')"
-		BaseDatos.InsertarBD(sql)		
-		ButtonCargarCursoClick(Nothing, Nothing)
-	End Sub
-	
-	Sub ButtonCargarCursoClick(sender As Object, e As EventArgs)
-		dataGridViewCursa.DataSource = BaseDatos.ConsultaBD("select cursa.id_cursa as ID, alumno.codigo as Código, alumno.nombre as Nombre, materia.nombre as Materia, cursa.ciclo as Ciclo from cursa, alumno, materia where cursa.id_alumno = alumno.id_alumno and cursa.id_materia = materia.id_materia" )		
-	End Sub
-	
-	Sub ButtoncancelarInscClick(sender As Object, e As EventArgs)
-		Dim sql, id_cursa, codigo, materia, ciclo As String
-		
-		codigo = dataGridViewCursa.CurrentRow.Cells(1).Value.ToString
-		materia = dataGridViewCursa.CurrentRow.Cells(3).Value.ToString
-		ciclo = dataGridViewCursa.CurrentRow.Cells(4).Value.ToString
-		
-		If MsgBox("Desea cancelar la inscripcion del alumno con el codigo: "+codigo+" en la materia: "+materia+" del ciclo: "+ciclo+"?", MsgBoxStyle.OkCancel) = vbOK Then
-			
-			id_cursa = dataGridViewCursa.CurrentRow.Cells(0).Value.ToString
-			sql = "Delete "+id_cursa+" from cursa where id_cursa = "+id_cursa
-			BaseDatos.EliminarBD(sql)
-			ButtonCargarCursoClick(Nothing, Nothing)
-		End If
-		
 	End Sub
 	
 	Sub ButtonAgregarAlumnoClick(sender As Object, e As EventArgs)
@@ -96,6 +59,7 @@ Public Partial Class MainForm
 				SQL = "insert into Alumno  (nombre,codigo,carrera) values ('" + Nombre +  "','" + Codigo + "','" + Carrera + "')"
 				BaseDatos.InsertarBD(SQL)	
 				ButtonAlumnoClick(Nothing,Nothing)	
+				mostrarBotones()
 			End If
 		End If
 	End Sub
@@ -125,13 +89,11 @@ Public Partial Class MainForm
 				SQL = "update alumno set nombre='"+Nombre+"', codigo='"+Codigo+"', carrera='"+Carrera+"'  where id_alumno = "+id
 				BaseDatos.ActualizarBD(SQL)
 				ButtonAlumnoClick(Nothing,Nothing)	
+				mostrarBotones()
 			End If
 		End If
 	End Sub
 	
-	Sub DataGridViewAlumnoCellClick(sender As Object, e As DataGridViewCellEventArgs)
-		
-	End Sub
 	
 	Sub ButtonEliminarAlumnoClick(sender As Object, e As EventArgs)
 		Dim id, sql As String 	
@@ -145,11 +107,13 @@ Public Partial Class MainForm
 		
 		ButtonAlumnoClick(Nothing, Nothing)
 		ButtonCargarCursoClick(Nothing, Nothing)
-		
+		mostrarBotones()
 	End Sub
 	
 	Sub DataGridViewAlumnoSelectionChanged(sender As Object, e As EventArgs)
 		Dim codigo, materia, ciclo As String
+		
+		ButtonMateriaClick(Nothing,Nothing)
 		
 		codigo = dataGridViewAlumno.CurrentRow.Cells(2).Value.ToString
 		ciclo = comboBoxCiclo.Text
@@ -157,14 +121,80 @@ Public Partial Class MainForm
 		For i As Integer = 0 To dataGridViewCursa.RowCount-1
 			If dataGridViewCursa.Rows(i).Cells(1).Value.ToString = codigo Then
 				If dataGridViewCursa.Rows(i).Cells(4).Value.ToString = ciclo Then
-					materia = dataGridViewCursa.CurrentRow.Cells(3).Value.ToString
-					For j As Integer = 0 To dataGridViewMateria.RowCount-1
+					materia = dataGridViewCursa.Rows(i).Cells(3).Value.ToString
+					Dim j As Integer = 0
+					For Each fila As DataGridViewRow In dataGridViewMateria.Rows
 						If dataGridViewMateria.Rows(j).Cells(1).Value.ToString = materia Then
-							dataGridViewMateria.Rows(j).Visible = False
+							dataGridViewMateria.Rows.Remove(fila)
 						End If
-					Next j
+						j+=1
+					Next
 				End If
 			End If
 		Next i
 	End Sub
+	
+	'MATERIA
+	Sub ButtonMateriaClick(sender As Object, e As EventArgs)		
+		dataGridViewMateria.DataSource = BaseDatos.ConsultaBD("select id_materia as ID, nombre as Nombre, nrc as NRC, clave as Clave from materia" )
+	End Sub
+	
+	'CURSA
+	Sub ButtonInscribirClick(sender As Object, e As EventArgs)
+		Dim id_alumno, id_materia, ciclo, sql As String
+		
+		id_alumno = dataGridViewAlumno.CurrentRow.Cells(0).Value.ToString
+		id_materia = dataGridViewMateria.CurrentRow.Cells(0).Value.ToString
+		ciclo = comboBoxCiclo.Text
+		sql = "insert into cursa (id_alumno, id_materia, ciclo) values (" + id_alumno + "," + id_materia + ",'" + ciclo + "')"
+		BaseDatos.InsertarBD(sql)		
+		ButtonCargarCursoClick(Nothing, Nothing)
+		DataGridViewAlumnoSelectionChanged(Nothing,Nothing)
+		mostrarBotones()
+	End Sub
+	
+	Sub ButtonCargarCursoClick(sender As Object, e As EventArgs)
+		dataGridViewCursa.DataSource = BaseDatos.ConsultaBD("select cursa.id_cursa as ID, alumno.codigo as Código, alumno.nombre as Nombre, materia.nombre as Materia, cursa.ciclo as Ciclo from cursa, alumno, materia where cursa.id_alumno = alumno.id_alumno and cursa.id_materia = materia.id_materia" )		
+	End Sub
+	
+	Sub ButtoncancelarInscClick(sender As Object, e As EventArgs)
+		Dim sql, id_cursa, codigo, materia, ciclo As String
+		
+		codigo = dataGridViewCursa.CurrentRow.Cells(1).Value.ToString
+		materia = dataGridViewCursa.CurrentRow.Cells(3).Value.ToString
+		ciclo = dataGridViewCursa.CurrentRow.Cells(4).Value.ToString
+		
+		If MsgBox("Desea cancelar la inscripcion del alumno con el codigo: "+codigo+" en la materia: "+materia+" del ciclo: "+ciclo+"?", MsgBoxStyle.OkCancel) = vbOK Then
+			
+			id_cursa = dataGridViewCursa.CurrentRow.Cells(0).Value.ToString
+			sql = "Delete "+id_cursa+" from cursa where id_cursa = "+id_cursa
+			BaseDatos.EliminarBD(sql)
+			ButtonCargarCursoClick(Nothing, Nothing)
+			DataGridViewAlumnoSelectionChanged(Nothing,Nothing)
+			mostrarBotones()
+		End If
+	End Sub
+	
+	
+	'METODOS GENERALES
+	Sub mostrarBotones()
+		If dataGridViewAlumno.RowCount > 0 Then
+			buttonEliminarAlumno.Enabled = True
+			buttonModificarAlumno.Enabled = True
+		Else
+			buttonEliminarAlumno.Enabled = False
+			buttonModificarAlumno.Enabled = False
+		End If
+		If dataGridViewAlumno.RowCount > 0 And dataGridViewMateria.RowCount > 0 Then
+			buttonInscribir.Enabled = True	
+		Else
+			buttonInscribir.Enabled = False
+		End If
+		If dataGridViewCursa.RowCount > 0 Then
+			buttoncancelarInsc.Enabled = True
+		Else
+			buttoncancelarInsc.Enabled = False
+		End If
+	End Sub
+	
 End Class
