@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{C15D65CE-9AD0-47AA-B239-78BCB2B5042B}</ProjectGuid>
+    <ProjectGuid>{1D97CC6E-B9F5-4361-81DC-C434337BA034}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
     <MyType>WindowsForms</MyType>
-    <RootNamespace>ejemplo8_bd</RootNamespace>
-    <AssemblyName>ejemplo8_bd</AssemblyName>
+    <RootNamespace>Metro</RootNamespace>
+    <AssemblyName>Metro</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -31,6 +31,15 @@
     <DefineConstants>TRACE=1</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\Downloads\metro\metro\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\Downloads\metro\metro\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\..\Downloads\metro\metro\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -56,21 +65,12 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BD.vb" />
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
     <Compile Include="MainForm.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
-    <Compile Include="V_agregarAlumno.Designer.vb">
-      <DependentUpon>V_agregarAlumno.vb</DependentUpon>
-    </Compile>
-    <Compile Include="V_agregarAlumno.vb" />
-    <Compile Include="V_agregarMateria.Designer.vb">
-      <DependentUpon>V_agregarMateria.vb</DependentUpon>
-    </Compile>
-    <Compile Include="V_agregarMateria.vb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
@@ -80,12 +80,6 @@
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="V_agregarAlumno.resx">
-      <DependentUpon>V_agregarAlumno.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="V_agregarMateria.resx">
-      <DependentUpon>V_agregarMateria.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

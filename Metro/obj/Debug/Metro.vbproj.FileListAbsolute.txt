@@ -1,0 +1,10 @@
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\bin\Debug\Metro.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\bin\Debug\Metro.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\bin\Debug\MetroFramework.Design.dll
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\bin\Debug\MetroFramework.dll
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\obj\Debug\Metro.vbprojResolveAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\obj\Debug\Metro.exe
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\obj\Debug\Metro.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\obj\Debug\Metro.MainForm.resources
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\Metro\obj\Debug\Metro.vbproj.GenerateResource.Cache

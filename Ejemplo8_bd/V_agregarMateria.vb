@@ -6,12 +6,13 @@
 ' 
 ' To change this template use Tools | Options | Coding | Edit Standard Headers.
 '
-Public Partial Class V_agregarAlumno
-	Public Nombre, Codigo, Carrera As String
+Public Partial Class V_agregarMateria	
+	Public materia, nrc, clave As String
 	
 	Public Sub New()
 		Me.InitializeComponent()
-	End Sub
+	End Sub'ayuda no corre
+	
 	
 	Public Sub New(Titulo As String, TituloBoton As String)
 		Me.InitializeComponent()
@@ -19,23 +20,23 @@ Public Partial Class V_agregarAlumno
 		buttonAgregar.Text = TituloBoton
 	End Sub
 	
-	Public Sub New(Titulo As String, TituloBoton As String, Nombre As String, Codigo As String, Carrera As String)
+	Public Sub New(Titulo As String, TituloBoton As String, materia As String, nrc As String, clave As String)
 		Me.InitializeComponent()
 		Me.Text = Titulo
-		textBoxNombre.Text = Nombre
-		textBoxCodigo.Text = Codigo
-		comboBoxCarrera.Text = Carrera
+		textBoxMateria.Text = materia
+		textBoxNRC.Text = nrc
+		textBoxClave.Text = clave
 		buttonAgregar.Text = TituloBoton
 	End Sub
 	
 	
 	Sub ButtonAgregarClick(sender As Object, e As EventArgs)
 		
-		Nombre = textBoxNombre.Text
-		Codigo = textBoxCodigo.Text
-		Carrera = comboBoxCarrera.Text
+		materia = textBoxMateria.Text
+		nrc = textBoxNRC.Text
+		clave = textBoxClave.Text
 		
-		If Nombre = "" Or Codigo = "" Or Carrera = "" Then
+		If materia = "" Or nrc = "" Or clave = "" Then
 			MsgBox("Flatan campos por llenar")
 		Else
 			Me.DialogResult = DialogResult.OK

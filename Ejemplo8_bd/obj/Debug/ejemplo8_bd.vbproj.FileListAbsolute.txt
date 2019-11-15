@@ -36,3 +36,4 @@ C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\ejemplo8_bd.pdb
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\bin\Debug\ejemplo8_bd.exe
 C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\bin\Debug\ejemplo8_bd.pdb
+C:\Users\Fausto Garcia\Documents\SharpDevelop Projects\Udg\ejemplo8_bd\obj\Debug\ejemplo8_bd.V_agregarMateria.resources

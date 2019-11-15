@@ -6,7 +6,8 @@
 ' 
 ' To change this template use Tools | Options | Coding | Edit Standard Headers.
 '
-Partial Class V_agregarAlumno
+Partial Class V_agregarMateria
+	
 	Inherits System.Windows.Forms.Form
 	
 	''' <summary>
@@ -38,34 +39,37 @@ Partial Class V_agregarAlumno
 		Me.label3 = New System.Windows.Forms.Label()
 		Me.buttonAgregar = New System.Windows.Forms.Button()
 		Me.buttonCancelar = New System.Windows.Forms.Button()
-		Me.textBoxNombre = New System.Windows.Forms.TextBox()
-		Me.textBoxCodigo = New System.Windows.Forms.TextBox()
-		Me.comboBoxCarrera = New System.Windows.Forms.ComboBox()
+		Me.textBoxMateria = New System.Windows.Forms.TextBox()
+		Me.textBoxNRC = New System.Windows.Forms.TextBox()
+		Me.textBoxClave = New System.Windows.Forms.TextBox()
 		Me.SuspendLayout
 		'
 		'label1
 		'
-		Me.label1.Location = New System.Drawing.Point(12, 23)
+		Me.label1.Location = New System.Drawing.Point(12, 20)
 		Me.label1.Name = "label1"
-		Me.label1.Size = New System.Drawing.Size(100, 23)
+		Me.label1.Size = New System.Drawing.Size(52, 20)
 		Me.label1.TabIndex = 0
-		Me.label1.Text = "Nombre del alumno"
+		Me.label1.Text = "Materia"
+		Me.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		'
 		'label2
 		'
-		Me.label2.Location = New System.Drawing.Point(12, 58)
+		Me.label2.Location = New System.Drawing.Point(12, 55)
 		Me.label2.Name = "label2"
-		Me.label2.Size = New System.Drawing.Size(100, 23)
+		Me.label2.Size = New System.Drawing.Size(52, 20)
 		Me.label2.TabIndex = 1
-		Me.label2.Text = "Código del alumno"
+		Me.label2.Text = "NRC"
+		Me.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		'
 		'label3
 		'
-		Me.label3.Location = New System.Drawing.Point(12, 91)
+		Me.label3.Location = New System.Drawing.Point(185, 55)
 		Me.label3.Name = "label3"
-		Me.label3.Size = New System.Drawing.Size(100, 23)
+		Me.label3.Size = New System.Drawing.Size(42, 20)
 		Me.label3.TabIndex = 2
-		Me.label3.Text = "Carrera del alumno"
+		Me.label3.Text = "Clave"
+		Me.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		'
 		'buttonAgregar
 		'
@@ -87,52 +91,49 @@ Partial Class V_agregarAlumno
 		Me.buttonCancelar.Text = "Cancelar"
 		Me.buttonCancelar.UseVisualStyleBackColor = true
 		'
-		'textBoxNombre
+		'textBoxMateria
 		'
-		Me.textBoxNombre.Location = New System.Drawing.Point(118, 20)
-		Me.textBoxNombre.Name = "textBoxNombre"
-		Me.textBoxNombre.Size = New System.Drawing.Size(215, 20)
-		Me.textBoxNombre.TabIndex = 5
+		Me.textBoxMateria.Location = New System.Drawing.Point(70, 20)
+		Me.textBoxMateria.Name = "textBoxMateria"
+		Me.textBoxMateria.Size = New System.Drawing.Size(263, 20)
+		Me.textBoxMateria.TabIndex = 5
 		'
-		'textBoxCodigo
+		'textBoxNRC
 		'
-		Me.textBoxCodigo.Location = New System.Drawing.Point(118, 55)
-		Me.textBoxCodigo.Name = "textBoxCodigo"
-		Me.textBoxCodigo.Size = New System.Drawing.Size(116, 20)
-		Me.textBoxCodigo.TabIndex = 6
+		Me.textBoxNRC.Location = New System.Drawing.Point(70, 55)
+		Me.textBoxNRC.Name = "textBoxNRC"
+		Me.textBoxNRC.Size = New System.Drawing.Size(100, 20)
+		Me.textBoxNRC.TabIndex = 6
 		'
-		'comboBoxCarrera
+		'textBoxClave
 		'
-		Me.comboBoxCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-		Me.comboBoxCarrera.FormattingEnabled = true
-		Me.comboBoxCarrera.Items.AddRange(New Object() {"Informática", "Computación", "Recursos humanos", "Ing. Industrial", "Ing. Química", "QFB"})
-		Me.comboBoxCarrera.Location = New System.Drawing.Point(118, 85)
-		Me.comboBoxCarrera.Name = "comboBoxCarrera"
-		Me.comboBoxCarrera.Size = New System.Drawing.Size(215, 21)
-		Me.comboBoxCarrera.TabIndex = 7
+		Me.textBoxClave.Location = New System.Drawing.Point(233, 55)
+		Me.textBoxClave.Name = "textBoxClave"
+		Me.textBoxClave.Size = New System.Drawing.Size(100, 20)
+		Me.textBoxClave.TabIndex = 8
 		'
-		'V_agregarAlumno
+		'V_agregarMateria
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(353, 147)
-		Me.Controls.Add(Me.comboBoxCarrera)
-		Me.Controls.Add(Me.textBoxCodigo)
-		Me.Controls.Add(Me.textBoxNombre)
+		Me.Controls.Add(Me.textBoxClave)
+		Me.Controls.Add(Me.textBoxNRC)
+		Me.Controls.Add(Me.textBoxMateria)
 		Me.Controls.Add(Me.buttonCancelar)
 		Me.Controls.Add(Me.buttonAgregar)
 		Me.Controls.Add(Me.label3)
 		Me.Controls.Add(Me.label2)
 		Me.Controls.Add(Me.label1)
-		Me.Name = "V_agregarAlumno"
+		Me.Name = "V_agregarMateria"
 		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
 		Me.Text = "Agregar nuevo alumno"
 		Me.ResumeLayout(false)
 		Me.PerformLayout
 	End Sub
-	Private comboBoxCarrera As System.Windows.Forms.ComboBox
-	Private textBoxCodigo As System.Windows.Forms.TextBox
-	Private textBoxNombre As System.Windows.Forms.TextBox
+	Private textBoxClave As System.Windows.Forms.TextBox
+	Private textBoxNRC As System.Windows.Forms.TextBox
+	Private textBoxMateria As System.Windows.Forms.TextBox
 	Private buttonCancelar As System.Windows.Forms.Button
 	Private buttonAgregar As System.Windows.Forms.Button
 	Private label3 As System.Windows.Forms.Label
